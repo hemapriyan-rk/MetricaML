@@ -1,0 +1,18 @@
+[Unit]
+Description=MetricaML (FastAPI + experiment engine)
+After=network.target
+
+[Service]
+Type=simple
+User=__USER__
+WorkingDirectory=/opt/metricaml/backend
+Environment=METRICA_DATA_DIR=/var/lib/metricaml
+# One worker on purpose: the one-experiment-at-a-time rule lives in this process.
+ExecStart=/opt/metricaml/backend/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000 --workers 1
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

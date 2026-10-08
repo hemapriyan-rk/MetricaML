@@ -1,0 +1,1508 @@
+customer_id,age,city,contract,internet_service,tenure_months,monthly_charges,support_calls,income,churn
+10001,68,Surat,Month-to-month,DSL,25,102.15,1,70700.0,Yes
+10002,51,Jaipur,One year,Fiber,17,92.33,1,58583.0,Yes
+10003,54,Lucknow,Month-to-month,Fiber,12,66.15,3,57890.0,Yes
+10004,65,Delhi,Month-to-month,DSL,4,84.45,2,74787.0,Yes
+10005,48,Hyderabad,Month-to-month,Fiber,26,62.28,1,79645.0,Yes
+10006,59,Jaipur,Month-to-month,Fiber,23,46.78,3,69538.0,No
+10007,62,,Month-to-month,Fiber,23,59.11,0,43094.0,Yes
+10008,29,Hyderabad,Month-to-month,DSL,33,45.04,0,30824.0,No
+10009,20,Bengaluru,Month-to-month,Fiber,52,76.25,0,35444.0,No
+10010,33,Hyderabad,Month-to-month,DSL,40,65.32,1,23794.0,Yes
+10011,33,Jaipur,Month-to-month,Fiber,6,77.49,1,82316.0,Yes
+10012,64,Chennai,One year,DSL,11,83.19,0,49493.0,No
+10013,66,Kolkata,Month-to-month,Fiber,50,18.0,0,54748.0,No
+10014,18,Kochi,Month-to-month,Fiber,39,71.85,0,55861.0,Yes
+10015,44,Mumbai,Month-to-month,Fiber,19,25.36,1,85847.0,Yes
+10016,61,Chennai,One year,DSL,19,68.67,0,43377.0,No
+10017,24,Mumbai,Month-to-month,Fiber,12,45.7,3,72095.0,Yes
+10018,60,Indore,Month-to-month,Fiber,64,67.29,0,57640.0,No
+10019,24,Jaipur,One year,None,9,95.04,5,50143.0,Yes
+10020,42,Chennai,Month-to-month,Fiber,45,27.43,2,21074.0,Yes
+10021,61,Hyderabad,Two year,Fiber,26,69.19,3,67779.0,No
+10022,34,Lucknow,Two year,Fiber,15,63.27,1,40409.0,No
+10023,36,Indore,Month-to-month,DSL,10,23.37,1,45100.0,No
+10024,32,Hyderabad,One year,None,51,79.26,2,56375.0,No
+10025,56,Kolkata,Month-to-month,Fiber,32,65.75,1,54224.0,Yes
+10026,31,Hyderabad,Month-to-month,DSL,54,53.81,1,71167.0,No
+10027,70,Jaipur,Month-to-month,Fiber,44,49.12,1,41626.0,Yes
+10028,41,Pune,One year,None,12,120.0,1,55374.0,Yes
+10029,43,Lucknow,Two year,DSL,18,56.33,0,57254.0,No
+10030,44,Delhi,Month-to-month,DSL,5,25.39,1,53102.0,No
+10031,48,Mumbai,One year,Fiber,52,44.52,2,63873.0,No
+10032,47,Delhi,Month-to-month,DSL,32,56.93,0,48490.0,No
+10033,45,Hyderabad,Month-to-month,DSL,14,56.54,2,72528.0,Yes
+10034,70,Kochi,Two year,Fiber,26,63.27,1,40991.0,No
+10035,60,Hyderabad,One year,Fiber,9,41.97,2,28979.0,No
+10036,60,Indore,Month-to-month,Fiber,17,76.91,2,52009.0,Yes
+10037,55,Bengaluru,Two year,DSL,27,54.36,2,72129.0,No
+10038,50,Mumbai,Month-to-month,None,41,35.06,1,44189.0,No
+10039,36,Delhi,Month-to-month,DSL,17,47.06,3,42344.0,Yes
+10040,70,Bengaluru,Month-to-month,Fiber,19,56.54,2,46984.0,Yes
+10041,42,Chennai,Two year,Fiber,16,83.67,5,55399.0,Yes
+10042,29,Surat,Month-to-month,DSL,32,75.66,0,49792.0,No
+10043,62,Hyderabad,Two year,Fiber,5,57.56,4,57803.0,No
+10044,26,Kochi,One year,Fiber,15,65.43,2,24378.0,Yes
+10045,63,Chennai,Month-to-month,None,15,69.73,2,77369.0,Yes
+10046,50,Surat,One year,Fiber,35,109.85,0,62280.0,No
+10047,24,Pune,Month-to-month,DSL,8,51.41,1,38508.0,Yes
+10048,20,Hyderabad,One year,Fiber,40,75.28,0,75284.0,No
+10049,41,Hyderabad,One year,None,36,80.98,2,60098.0,No
+10050,19,Lucknow,One year,Fiber,43,44.03,2,76925.0,No
+10051,25,Chennai,Two year,None,11,69.16,0,33310.0,No
+10052,45,Kochi,Month-to-month,DSL,12,68.6,4,80010.0,Yes
+10053,69,Lucknow,Two year,None,24,54.66,0,53441.0,No
+10054,42,Kochi,Month-to-month,DSL,14,77.49,2,18796.0,Yes
+10055,60,Hyderabad,One year,Fiber,15,87.63,1,65087.0,No
+10056,66,Pune,Two year,Fiber,22,89.87,1,47714.0,No
+10057,61,Bengaluru,Two year,None,25,60.78,2,35995.0,No
+10058,51,Bengaluru,Month-to-month,Fiber,25,69.18,0,49143.0,Yes
+10059,41,Surat,Month-to-month,DSL,18,116.71,1,20690.0,Yes
+10060,45,Hyderabad,Two year,DSL,14,40.72,4,62305.0,No
+10061,32,Surat,Two year,Fiber,10,69.88,4,49125.0,Yes
+10062,44,Mumbai,Month-to-month,Fiber,21,84.58,1,48235.0,No
+10063,38,Bengaluru,Two year,Fiber,17,68.3,1,75986.0,No
+10064,31,Chennai,Month-to-month,Fiber,19,79.43,2,53263.0,Yes
+10065,70,Lucknow,Month-to-month,Fiber,36,68.8,1,41794.0,Yes
+10066,18,Hyderabad,One year,Fiber,12,81.58,4,37018.0,Yes
+10067,23,Bengaluru,Month-to-month,DSL,57,93.22,2,51679.0,No
+10068,28,Indore,Month-to-month,None,17,60.13,1,70225.0,Yes
+10069,69,Kolkata,Month-to-month,Fiber,42,69.35,3,43102.0,Yes
+10070,54,Bengaluru,Month-to-month,Fiber,16,63.79,3,35580.0,Yes
+10071,64,Hyderabad,Month-to-month,Fiber,28,56.12,1,67885.0,No
+10072,28,Kolkata,Month-to-month,Fiber,19,64.57,0,53664.0,Yes
+10073,56,Kolkata,One year,Fiber,7,40.1,1,52264.0,No
+10074,37,Lucknow,One year,Fiber,28,81.38,1,87045.0,No
+10075,43,Hyderabad,One year,DSL,8,102.45,0,32682.0,Yes
+10076,18,Mumbai,Two year,DSL,16,102.5,1,55963.0,No
+10077,50,Lucknow,Month-to-month,None,38,93.07,2,23427.0,Yes
+10078,61,Hyderabad,Month-to-month,DSL,72,43.79,2,47733.0,No
+10079,53,Surat,Month-to-month,DSL,13,98.43,1,62362.0,Yes
+10080,26,Hyderabad,Month-to-month,None,18,49.26,2,71220.0,Yes
+10081,46,Jaipur,One year,Fiber,32,63.83,0,31741.0,No
+10082,32,Kochi,Month-to-month,Fiber,24,105.62,1,66444.0,Yes
+10083,69,Mumbai,Month-to-month,Fiber,51,41.42,3,65580.0,Yes
+10084,64,Indore,One year,DSL,15,83.51,2,50641.0,Yes
+10085,27,Surat,Month-to-month,DSL,56,71.19,0,93224.0,No
+10086,45,Chennai,Month-to-month,DSL,35,61.65,0,52686.0,No
+10087,67,Kolkata,One year,Fiber,24,45.73,3,38161.0,No
+10088,62,Kolkata,One year,DSL,22,74.3,2,59686.0,No
+10089,55,Pune,Month-to-month,Fiber,30,54.8,0,21994.0,Yes
+10090,51,Chennai,One year,DSL,37,88.0,1,78375.0,No
+10091,20,Pune,Month-to-month,None,17,91.93,2,68950.0,Yes
+10092,57,Bengaluru,Month-to-month,Fiber,15,34.66,2,46089.0,Yes
+10093,43,Kolkata,One year,DSL,17,53.88,2,62794.0,No
+10094,22,Hyderabad,Month-to-month,DSL,16,57.98,2,61506.0,Yes
+10095,30,Delhi,Month-to-month,DSL,38,39.0,1,84543.0,No
+10096,46,Bengaluru,One year,Fiber,33,40.41,3,42529.0,Yes
+10097,56,Kochi,One year,DSL,5,66.95,4,31405.0,Yes
+10098,44,Hyderabad,Month-to-month,Fiber,14,60.42,1,19160.0,Yes
+10099,50,Lucknow,One year,Fiber,8,28.66,2,47804.0,No
+10100,64,Hyderabad,Month-to-month,Fiber,18,53.16,1,26828.0,Yes
+10101,54,Surat,Two year,None,15,76.42,0,49809.0,No
+10102,37,Pune,Month-to-month,Fiber,12,38.46,0,59425.0,Yes
+10103,52,Delhi,Month-to-month,Fiber,31,44.68,1,45384.0,Yes
+10104,49,Bengaluru,Month-to-month,None,15,99.93,0,37105.0,Yes
+10105,23,Mumbai,Two year,Fiber,24,93.98,3,72305.0,No
+10106,21,Hyderabad,Month-to-month,DSL,17,29.34,1,49372.0,No
+10107,52,Pune,One year,None,31,35.28,2,56495.0,No
+10108,38,Delhi,Two year,DSL,30,73.3,3,68343.0,No
+10109,49,Bengaluru,Two year,Fiber,17,38.79,1,31170.0,No
+10110,35,Pune,Month-to-month,DSL,27,59.44,2,37471.0,Yes
+10111,29,Hyderabad,Month-to-month,Fiber,23,55.07,1,93814.0,Yes
+10112,25,Kochi,One year,Fiber,50,77.32,0,50058.0,No
+10113,38,Bengaluru,One year,DSL,11,18.0,1,35490.0,No
+10114,61,Chennai,Month-to-month,DSL,24,18.0,1,48464.0,No
+10115,39,Surat,Month-to-month,None,20,38.02,4,43211.0,Yes
+10116,38,Surat,Month-to-month,DSL,18,87.31,4,32413.0,Yes
+10117,48,Mumbai,Month-to-month,None,67,61.6,1,45923.0,No
+10118,69,Mumbai,One year,Fiber,25,27.42,3,52325.0,Yes
+10119,38,Chennai,Month-to-month,Fiber,40,75.85,2,52429.0,Yes
+10120,49,Lucknow,Month-to-month,Fiber,42,80.57,0,61523.0,Yes
+10121,41,Hyderabad,Month-to-month,DSL,25,59.59,0,24104.0,Yes
+10122,50,Bengaluru,Month-to-month,DSL,26,57.73,1,28016.0,Yes
+10123,41,,Month-to-month,DSL,11,74.63,0,65657.0,Yes
+10124,51,Chennai,Two year,Fiber,13,91.61,4,45361.0,No
+10125,46,Jaipur,Month-to-month,Fiber,22,68.35,4,72696.0,Yes
+10126,53,Lucknow,Month-to-month,Fiber,37,76.73,1,57665.0,Yes
+10127,68,Kochi,One year,Fiber,58,63.94,0,29433.0,No
+10128,25,Kolkata,Month-to-month,Fiber,8,56.61,1,61496.0,Yes
+10129,47,Kolkata,Month-to-month,DSL,28,44.85,0,35993.0,Yes
+10130,41,Bengaluru,Two year,Fiber,39,70.64,0,56938.0,No
+10131,36,Kochi,Two year,None,13,58.4,2,72902.0,No
+10132,30,Hyderabad,One year,DSL,12,59.64,2,87453.0,No
+10133,20,Kolkata,Month-to-month,Fiber,6,85.45,0,51516.0,Yes
+10134,39,Indore,Month-to-month,Fiber,31,75.74,1,64150.0,Yes
+10135,61,Indore,Month-to-month,Fiber,20,84.14,1,57605.0,Yes
+10136,23,,Month-to-month,DSL,27,30.34,0,65682.0,No
+10137,39,Kochi,Month-to-month,Fiber,11,77.28,2,15000.0,Yes
+10138,69,Bengaluru,Month-to-month,DSL,22,52.02,0,46260.0,Yes
+10139,68,Hyderabad,One year,Fiber,38,47.22,2,57446.0,No
+10140,29,Delhi,Month-to-month,Fiber,21,46.25,1,60387.0,Yes
+10141,18,Indore,Month-to-month,None,34,91.65,2,40257.0,Yes
+10142,53,Kolkata,Two year,DSL,43,83.21,2,66238.0,No
+10143,18,Kolkata,Month-to-month,Fiber,23,49.23,0,70823.0,Yes
+10144,33,Mumbai,Month-to-month,Fiber,30,39.97,2,53814.0,Yes
+10145,44,Mumbai,Month-to-month,Fiber,39,65.3,2,48926.0,Yes
+10146,64,Delhi,One year,Fiber,37,54.89,2,46794.0,No
+10147,22,Bengaluru,One year,DSL,46,101.51,2,54948.0,Yes
+10148,53,Lucknow,Month-to-month,DSL,23,32.85,5,72074.0,Yes
+10149,46,Lucknow,One year,DSL,18,24.74,1,77330.0,No
+10150,24,Kochi,Month-to-month,DSL,72,59.37,1,44931.0,No
+10151,62,Surat,Month-to-month,DSL,23,65.24,3,37368.0,Yes
+10152,62,Chennai,One year,DSL,30,67.92,2,39627.0,No
+10153,43,Surat,Two year,Fiber,65,81.58,1,68859.0,No
+10154,68,Pune,Two year,DSL,2,110.61,1,56310.0,No
+10155,50,Bengaluru,One year,Fiber,16,57.47,1,57577.0,Yes
+10156,65,Hyderabad,Month-to-month,DSL,3,53.02,4,60586.0,Yes
+10157,68,Delhi,Month-to-month,Fiber,44,26.3,1,58848.0,No
+10158,48,Kochi,Two year,DSL,72,70.35,1,50652.0,No
+10159,32,Pune,Month-to-month,DSL,18,83.77,0,35565.0,Yes
+10160,25,Pune,Month-to-month,Fiber,30,59.27,1,42514.0,Yes
+10161,47,Surat,One year,DSL,34,90.97,4,54666.0,Yes
+10162,28,Delhi,Two year,DSL,4,65.67,1,59118.0,No
+10163,57,Surat,One year,DSL,16,98.33,1,46594.0,No
+10164,67,Indore,Month-to-month,Fiber,27,72.33,2,45842.0,Yes
+10165,31,Lucknow,Month-to-month,Fiber,7,41.74,2,75135.0,Yes
+10166,47,Delhi,Month-to-month,None,14,50.99,3,45005.0,No
+10167,20,Indore,Two year,Fiber,43,31.26,1,56314.0,No
+10168,27,Jaipur,Two year,Fiber,29,26.78,1,47445.0,No
+10169,37,Bengaluru,Month-to-month,DSL,9,70.87,5,38567.0,Yes
+10170,64,Bengaluru,Two year,Fiber,10,84.13,2,27766.0,No
+10171,69,Surat,Month-to-month,Fiber,29,107.99,2,43853.0,Yes
+10172,52,Jaipur,Month-to-month,Fiber,7,63.79,1,39199.0,Yes
+10173,48,Kolkata,Month-to-month,Fiber,12,59.79,2,66580.0,No
+10174,48,Delhi,Month-to-month,Fiber,19,40.6,4,33830.0,Yes
+10175,21,Hyderabad,Month-to-month,DSL,38,86.72,3,45901.0,Yes
+10176,37,Indore,Month-to-month,Fiber,13,73.56,3,63401.0,Yes
+10177,70,Chennai,One year,None,17,51.91,1,50820.0,No
+10178,39,Hyderabad,Month-to-month,Fiber,23,80.15,1,60780.0,Yes
+10179,29,Indore,Two year,Fiber,15,77.35,2,66354.0,No
+10180,30,Kochi,Two year,DSL,17,23.86,1,25477.0,No
+10181,55,Kochi,Month-to-month,Fiber,53,81.34,0,45919.0,No
+10182,20,Kochi,Month-to-month,DSL,56,67.99,1,36932.0,No
+10183,69,Hyderabad,Two year,DSL,27,56.39,1,,No
+10184,64,Pune,Month-to-month,DSL,26,55.82,1,50741.0,Yes
+10185,48,Lucknow,Month-to-month,None,25,103.46,2,60798.0,Yes
+10186,42,Kolkata,Month-to-month,Fiber,48,98.79,0,80466.0,Yes
+10187,58,Pune,Two year,None,17,105.17,0,46844.0,No
+10188,47,Mumbai,One year,Fiber,40,39.73,3,53882.0,Yes
+10189,43,Kolkata,Month-to-month,DSL,36,50.6,2,59344.0,Yes
+10190,35,Kolkata,Month-to-month,Fiber,58,84.92,3,48294.0,Yes
+10191,41,Indore,Month-to-month,DSL,39,38.41,2,73184.0,Yes
+10192,57,Kolkata,Month-to-month,DSL,16,49.16,4,66025.0,Yes
+10193,20,Indore,Two year,None,27,25.31,2,69037.0,No
+10194,19,Indore,Two year,Fiber,27,105.77,2,53452.0,Yes
+10195,56,Chennai,Month-to-month,Fiber,11,88.38,3,47060.0,Yes
+10196,37,Hyderabad,Month-to-month,DSL,16,75.09,2,46860.0,Yes
+10197,60,Surat,Month-to-month,DSL,8,69.82,0,46701.0,Yes
+10198,19,Mumbai,Two year,Fiber,6,55.82,1,25843.0,No
+10199,66,Indore,One year,DSL,32,56.25,2,58575.0,No
+10200,24,Hyderabad,One year,Fiber,8,78.55,1,65923.0,Yes
+10201,40,Indore,One year,None,23,49.34,2,52488.0,No
+10202,69,Lucknow,Month-to-month,None,13,92.0,2,44565.0,Yes
+10203,23,Kolkata,Two year,Fiber,40,54.16,1,53253.0,No
+10204,52,Chennai,Month-to-month,DSL,27,45.78,2,56318.0,Yes
+10205,56,Lucknow,One year,None,28,93.56,2,57980.0,No
+10206,40,Chennai,Month-to-month,Fiber,36,61.83,2,81944.0,Yes
+10207,22,Bengaluru,Month-to-month,DSL,23,77.21,1,38698.0,Yes
+10208,45,Surat,Two year,DSL,8,55.87,1,58574.0,No
+10209,40,Pune,Month-to-month,DSL,22,18.0,1,63877.0,Yes
+10210,64,Kolkata,Month-to-month,Fiber,28,77.04,0,53909.0,Yes
+10211,54,Bengaluru,Month-to-month,DSL,20,35.37,1,48816.0,No
+10212,36,Kochi,One year,Fiber,26,88.81,0,35961.0,No
+10213,21,Hyderabad,Month-to-month,Fiber,8,30.88,3,42971.0,Yes
+10214,49,Pune,Month-to-month,Fiber,25,23.97,3,64118.0,Yes
+10215,32,Kochi,Month-to-month,None,72,71.77,2,76253.0,No
+10216,54,Delhi,Month-to-month,Fiber,11,74.36,1,41961.0,Yes
+10217,63,Chennai,Month-to-month,Fiber,11,67.35,1,60293.0,Yes
+10218,36,,Month-to-month,Fiber,72,38.3,4,61077.0,No
+10219,65,Kolkata,Month-to-month,DSL,34,84.55,1,69008.0,Yes
+10220,45,Delhi,One year,DSL,62,32.78,0,56599.0,No
+10221,46,Kochi,Month-to-month,DSL,45,54.79,1,59814.0,No
+10222,58,Pune,Two year,DSL,6,47.66,0,67149.0,No
+10223,59,Kochi,Two year,Fiber,52,56.69,2,33721.0,No
+10224,66,Delhi,Month-to-month,Fiber,25,83.76,1,53377.0,Yes
+10225,70,Mumbai,Month-to-month,None,12,51.05,2,23983.0,No
+10226,26,Indore,Two year,Fiber,33,77.42,0,20635.0,No
+10227,39,Indore,Month-to-month,DSL,27,80.27,3,39264.0,Yes
+10228,67,Hyderabad,Two year,DSL,30,27.36,3,27647.0,No
+10229,34,Kolkata,Month-to-month,DSL,8,39.34,1,60827.0,No
+10230,18,Kochi,One year,None,72,56.57,3,68712.0,No
+10231,48,Chennai,Month-to-month,Fiber,19,51.97,1,47659.0,Yes
+10232,57,Delhi,One year,DSL,39,71.77,2,50360.0,No
+10233,57,Delhi,Two year,DSL,5,22.5,2,48817.0,No
+10234,60,Jaipur,Month-to-month,Fiber,8,80.85,2,48364.0,Yes
+10235,52,Indore,Two year,Fiber,30,81.38,2,54787.0,No
+10236,25,Bengaluru,Month-to-month,Fiber,36,61.3,3,58274.0,Yes
+10237,62,Delhi,Month-to-month,DSL,13,34.57,0,45114.0,No
+10238,40,Mumbai,Month-to-month,DSL,34,65.12,2,39865.0,Yes
+10239,62,Mumbai,Month-to-month,Fiber,13,53.18,1,44170.0,No
+10240,61,Bengaluru,Month-to-month,DSL,14,77.47,3,65543.0,Yes
+10241,69,Pune,One year,DSL,13,63.12,2,45789.0,No
+10242,18,Chennai,Month-to-month,Fiber,9,81.02,0,76030.0,No
+10243,63,Bengaluru,One year,Fiber,7,55.47,3,48672.0,Yes
+10244,51,Jaipur,Two year,DSL,22,96.74,1,74672.0,No
+10245,43,Kochi,Two year,DSL,41,18.0,4,33294.0,No
+10246,60,Kolkata,Two year,DSL,33,42.64,0,41368.0,No
+10247,68,Hyderabad,Two year,Fiber,72,75.8,0,60290.0,No
+10248,45,Indore,Month-to-month,Fiber,18,31.76,5,60464.0,Yes
+10249,22,Chennai,Two year,None,27,81.19,2,50038.0,No
+10250,56,Chennai,Month-to-month,DSL,11,38.23,2,85487.0,Yes
+10251,30,Jaipur,Two year,Fiber,22,67.05,1,53725.0,No
+10252,30,Hyderabad,Two year,Fiber,39,44.88,2,57229.0,No
+10253,28,Mumbai,One year,DSL,26,55.29,3,43377.0,No
+10254,28,Surat,Month-to-month,Fiber,11,68.84,1,79272.0,Yes
+10255,66,Pune,Month-to-month,Fiber,9,62.7,0,66373.0,Yes
+10256,37,Hyderabad,Month-to-month,DSL,13,56.61,0,59213.0,Yes
+10257,23,Hyderabad,Month-to-month,Fiber,9,112.37,3,26173.0,Yes
+10258,27,Chennai,Month-to-month,None,8,65.19,2,58408.0,Yes
+10259,38,Lucknow,Month-to-month,Fiber,24,43.66,3,45036.0,Yes
+10260,36,Lucknow,Two year,None,7,85.41,2,58880.0,No
+10261,34,Chennai,Two year,Fiber,11,83.05,0,67262.0,No
+10262,68,Mumbai,Month-to-month,Fiber,27,91.9,1,40487.0,Yes
+10263,63,Surat,Month-to-month,DSL,4,104.32,0,56043.0,Yes
+10264,48,Kochi,Month-to-month,DSL,31,44.33,3,66690.0,Yes
+10265,70,Kolkata,Month-to-month,Fiber,9,88.31,1,55164.0,Yes
+10266,36,Kolkata,Month-to-month,DSL,7,90.07,1,47248.0,Yes
+10267,25,Lucknow,One year,DSL,16,65.01,1,35496.0,No
+10268,32,Indore,Month-to-month,DSL,14,70.39,4,41778.0,Yes
+10269,22,Chennai,Month-to-month,Fiber,16,18.0,1,32110.0,Yes
+10270,68,Kolkata,Month-to-month,DSL,49,52.37,2,68422.0,Yes
+10271,29,Indore,One year,DSL,22,104.34,2,54210.0,Yes
+10272,41,Kochi,Month-to-month,Fiber,5,25.69,2,32986.0,Yes
+10273,28,Hyderabad,Month-to-month,None,15,53.21,1,52445.0,Yes
+10274,69,Bengaluru,Month-to-month,DSL,27,71.33,3,31781.0,Yes
+10275,26,Hyderabad,Two year,Fiber,25,77.66,1,15000.0,No
+10276,45,Surat,Month-to-month,Fiber,9,100.89,3,71942.0,Yes
+10277,68,Kolkata,One year,Fiber,14,26.22,3,71348.0,No
+10278,45,Delhi,Month-to-month,Fiber,13,65.94,3,28822.0,Yes
+10279,65,Pune,Two year,Fiber,7,83.91,0,40983.0,No
+10280,65,Indore,Month-to-month,DSL,20,36.1,2,55825.0,No
+10281,58,Surat,Month-to-month,Fiber,13,64.13,0,46354.0,Yes
+10282,57,Kochi,Two year,DSL,18,106.47,2,38770.0,No
+10283,48,Kochi,One year,DSL,22,93.96,0,44259.0,No
+10284,48,Pune,Month-to-month,Fiber,12,76.87,0,48642.0,Yes
+10285,62,Kolkata,Month-to-month,Fiber,49,18.0,3,43625.0,No
+10286,40,Hyderabad,Two year,Fiber,23,62.13,2,55881.0,No
+10287,68,Mumbai,Month-to-month,DSL,18,73.5,0,48780.0,Yes
+10288,64,Mumbai,Month-to-month,Fiber,22,58.21,1,40281.0,Yes
+10289,37,Bengaluru,Two year,Fiber,47,63.56,1,52880.0,No
+10290,39,Lucknow,Month-to-month,DSL,9,120.0,1,25826.0,Yes
+10291,55,Bengaluru,Month-to-month,DSL,34,60.28,1,75676.0,No
+10292,66,Delhi,Month-to-month,Fiber,9,43.67,1,24578.0,Yes
+10293,23,Hyderabad,Month-to-month,DSL,29,70.34,1,51147.0,No
+10294,21,Indore,Month-to-month,Fiber,7,58.06,0,57931.0,Yes
+10295,31,Mumbai,One year,None,17,58.19,1,59124.0,No
+10296,40,Indore,Month-to-month,Fiber,12,63.08,5,56656.0,Yes
+10297,26,Kolkata,Month-to-month,DSL,15,82.03,2,72737.0,Yes
+10298,45,Delhi,Two year,Fiber,37,70.23,2,34431.0,No
+10299,46,Lucknow,Two year,DSL,40,38.57,1,51358.0,No
+10300,68,Bengaluru,One year,Fiber,20,62.08,1,54815.0,No
+10301,57,Kochi,Month-to-month,Fiber,13,75.44,3,44511.0,Yes
+10302,31,Kochi,Month-to-month,Fiber,36,54.71,0,42945.0,No
+10303,59,Surat,One year,DSL,8,90.28,3,73082.0,Yes
+10304,60,Lucknow,Month-to-month,DSL,6,82.1,1,41037.0,Yes
+10305,54,Hyderabad,Two year,DSL,19,43.2,0,44783.0,No
+10306,53,Chennai,Month-to-month,None,19,72.04,0,,Yes
+10307,34,Jaipur,Month-to-month,Fiber,23,108.64,1,49038.0,Yes
+10308,56,Lucknow,Month-to-month,DSL,20,99.32,4,55035.0,Yes
+10309,25,Kolkata,One year,None,72,63.76,0,49126.0,No
+10310,51,Lucknow,One year,DSL,11,84.75,5,58412.0,Yes
+10311,66,Hyderabad,One year,DSL,15,50.18,0,54600.0,No
+10312,69,Jaipur,Month-to-month,DSL,12,33.14,4,60112.0,Yes
+10313,33,Pune,Two year,Fiber,37,77.2,2,74346.0,No
+10314,35,Indore,One year,DSL,11,70.42,1,38911.0,No
+10315,50,Surat,Month-to-month,Fiber,8,76.31,2,78819.0,Yes
+10316,39,Surat,Month-to-month,DSL,18,64.46,2,45233.0,Yes
+10317,56,Surat,One year,Fiber,13,72.17,0,63055.0,No
+10318,28,Delhi,Month-to-month,DSL,25,53.72,6,54976.0,Yes
+10319,26,Bengaluru,One year,DSL,3,75.41,1,47668.0,Yes
+10320,20,Surat,One year,DSL,34,83.33,0,21041.0,No
+10321,42,Jaipur,Month-to-month,DSL,24,63.71,1,78162.0,No
+10322,29,Indore,Two year,DSL,15,82.91,2,40302.0,No
+10323,33,Hyderabad,Month-to-month,None,13,26.04,1,,No
+10324,66,Jaipur,Month-to-month,Fiber,27,47.7,1,69367.0,Yes
+10325,61,Mumbai,Month-to-month,Fiber,16,96.78,0,53594.0,Yes
+10326,62,Mumbai,Two year,None,26,103.76,1,82759.0,No
+10327,49,Mumbai,Month-to-month,DSL,59,70.51,0,79248.0,Yes
+10328,23,Surat,One year,DSL,21,62.73,2,63698.0,No
+10329,57,Hyderabad,Month-to-month,DSL,41,37.1,2,56405.0,No
+10330,50,Kochi,Two year,None,30,73.0,1,64550.0,No
+10331,66,Kochi,Two year,DSL,13,82.13,2,31363.0,No
+10332,43,Hyderabad,Month-to-month,DSL,45,32.4,0,55114.0,No
+10333,27,Kochi,Two year,Fiber,33,77.3,1,54728.0,No
+10334,49,Bengaluru,One year,Fiber,10,75.79,2,44854.0,Yes
+10335,42,Mumbai,Month-to-month,DSL,25,74.7,1,56422.0,Yes
+10336,52,Surat,Month-to-month,Fiber,61,40.19,1,29076.0,No
+10337,37,,Month-to-month,DSL,37,76.92,0,66753.0,No
+10338,34,Delhi,Month-to-month,None,34,32.05,3,72891.0,No
+10339,24,Chennai,Month-to-month,DSL,15,97.75,2,31718.0,Yes
+10340,68,Lucknow,Month-to-month,DSL,20,67.97,1,54677.0,Yes
+10341,58,Jaipur,Month-to-month,Fiber,28,39.4,2,76992.0,Yes
+10342,42,Pune,One year,Fiber,12,94.59,2,59031.0,Yes
+10343,30,Surat,Two year,None,5,90.39,1,35929.0,No
+10344,51,Kochi,Two year,Fiber,54,50.69,1,36619.0,No
+10345,39,Kolkata,Month-to-month,None,12,113.49,1,65937.0,Yes
+10346,51,Lucknow,One year,DSL,54,42.91,1,81549.0,No
+10347,22,Jaipur,Month-to-month,None,18,71.9,4,35061.0,Yes
+10348,27,Mumbai,Month-to-month,Fiber,10,91.01,1,52941.0,Yes
+10349,56,Pune,Two year,DSL,8,18.0,0,39986.0,No
+10350,21,Bengaluru,Month-to-month,DSL,40,87.03,2,47810.0,Yes
+10351,53,Indore,Two year,DSL,16,63.58,3,57251.0,No
+10352,39,Mumbai,One year,Fiber,7,64.65,2,51674.0,Yes
+10353,18,Indore,Month-to-month,Fiber,27,41.31,0,41425.0,Yes
+10354,58,Hyderabad,One year,None,20,72.29,1,85804.0,No
+10355,55,Kochi,Month-to-month,Fiber,13,40.58,1,49812.0,No
+10356,61,Mumbai,Two year,DSL,12,43.69,1,49439.0,No
+10357,65,Delhi,Month-to-month,None,12,55.15,1,69966.0,No
+10358,56,Indore,Month-to-month,Fiber,20,38.0,2,52520.0,Yes
+10359,62,Kolkata,One year,Fiber,14,99.6,0,49105.0,Yes
+10360,23,Lucknow,Month-to-month,Fiber,8,35.77,3,67406.0,Yes
+10361,66,Surat,Month-to-month,Fiber,39,48.4,0,35886.0,No
+10362,66,Kolkata,Month-to-month,DSL,47,58.04,0,64209.0,No
+10363,54,Kolkata,Month-to-month,DSL,18,65.08,1,68689.0,Yes
+10364,60,Delhi,Month-to-month,DSL,21,82.43,2,62842.0,Yes
+10365,57,Indore,One year,Fiber,39,83.0,1,49484.0,No
+10366,64,Delhi,Two year,Fiber,12,58.34,3,52193.0,No
+10367,65,Surat,Month-to-month,Fiber,26,56.55,2,25057.0,Yes
+10368,45,Jaipur,One year,Fiber,45,65.77,0,50249.0,No
+10369,61,Kolkata,Two year,Fiber,17,83.08,2,56908.0,Yes
+10370,66,Indore,Month-to-month,Fiber,3,80.34,3,66081.0,Yes
+10371,33,Indore,One year,DSL,8,53.64,2,54567.0,Yes
+10372,20,Surat,Month-to-month,Fiber,12,19.7,1,46139.0,Yes
+10373,27,Kolkata,Two year,Fiber,20,112.15,1,39011.0,No
+10374,19,Surat,One year,Fiber,5,85.93,2,51586.0,Yes
+10375,41,Kolkata,Two year,DSL,6,70.79,0,54444.0,No
+10376,19,Bengaluru,One year,Fiber,27,72.49,0,71496.0,No
+10377,31,Kochi,Two year,Fiber,31,53.52,0,52449.0,No
+10378,31,Kochi,Month-to-month,Fiber,18,42.98,4,44371.0,Yes
+10379,55,Mumbai,One year,Fiber,42,57.69,2,50607.0,No
+10380,31,Kolkata,Month-to-month,Fiber,41,60.11,0,44649.0,No
+10381,68,Bengaluru,Month-to-month,Fiber,39,51.24,1,48584.0,No
+10382,27,Kolkata,Month-to-month,Fiber,7,32.94,1,17333.0,Yes
+10383,69,Delhi,One year,DSL,62,58.12,2,27064.0,No
+10384,48,Kochi,One year,Fiber,6,77.68,3,33380.0,Yes
+10385,30,Kolkata,Two year,None,16,54.11,4,59677.0,No
+10386,20,Bengaluru,Month-to-month,None,2,65.48,0,51061.0,Yes
+10387,34,Lucknow,Month-to-month,DSL,25,19.44,1,54624.0,No
+10388,49,Bengaluru,Month-to-month,DSL,18,60.43,0,70704.0,Yes
+10389,23,Delhi,Two year,Fiber,31,62.32,2,35787.0,No
+10390,26,Hyderabad,Month-to-month,Fiber,17,38.03,0,70390.0,Yes
+10391,24,Surat,Month-to-month,None,8,26.95,0,58379.0,Yes
+10392,53,Delhi,One year,DSL,19,74.06,3,40987.0,No
+10393,22,Lucknow,One year,DSL,6,47.19,2,75857.0,Yes
+10394,19,Indore,Month-to-month,DSL,69,75.74,4,29712.0,No
+10395,42,Chennai,Month-to-month,DSL,5,55.76,4,34451.0,Yes
+10396,34,Hyderabad,Month-to-month,DSL,31,78.71,5,48991.0,Yes
+10397,48,Jaipur,Two year,Fiber,8,57.55,1,58695.0,No
+10398,67,Chennai,One year,Fiber,11,31.85,1,49254.0,No
+10399,63,Kolkata,Month-to-month,None,13,63.1,3,18496.0,Yes
+10400,46,Jaipur,Month-to-month,DSL,34,57.78,1,47560.0,Yes
+10401,52,Kolkata,Month-to-month,Fiber,21,79.46,1,50948.0,Yes
+10402,61,Surat,One year,DSL,22,55.09,0,92528.0,No
+10403,41,Delhi,One year,Fiber,6,56.35,1,74005.0,No
+10404,52,Kolkata,Two year,None,35,83.92,1,54223.0,No
+10405,29,Kochi,Month-to-month,Fiber,17,90.66,3,35023.0,Yes
+10406,50,Bengaluru,Month-to-month,Fiber,15,81.71,3,57682.0,Yes
+10407,30,Hyderabad,One year,None,50,87.83,0,33832.0,Yes
+10408,28,Indore,Two year,None,37,74.99,2,55478.0,No
+10409,58,Surat,One year,DSL,21,81.95,6,58066.0,Yes
+10410,48,Jaipur,Month-to-month,None,34,84.32,2,45934.0,Yes
+10411,37,Kochi,Two year,Fiber,8,73.88,1,56214.0,No
+10412,20,Jaipur,Month-to-month,Fiber,18,66.38,1,47050.0,Yes
+10413,30,Mumbai,Two year,None,24,68.13,4,43242.0,No
+10414,60,Pune,Month-to-month,None,15,117.91,2,76517.0,Yes
+10415,42,Pune,Month-to-month,DSL,13,65.3,3,61448.0,Yes
+10416,68,Lucknow,Two year,Fiber,19,59.79,1,47410.0,No
+10417,65,Delhi,Month-to-month,DSL,8,56.99,0,40140.0,Yes
+10418,63,Kochi,Two year,Fiber,19,64.27,4,55062.0,No
+10419,18,Surat,One year,Fiber,42,70.37,2,61214.0,No
+10420,20,Kolkata,Month-to-month,None,30,40.12,1,65712.0,Yes
+10421,48,Surat,Month-to-month,Fiber,25,21.43,2,75540.0,Yes
+10422,35,Hyderabad,One year,Fiber,14,71.5,2,59546.0,Yes
+10423,62,Hyderabad,Month-to-month,DSL,69,29.67,2,34575.0,Yes
+10424,34,Lucknow,Two year,DSL,22,70.69,0,84317.0,No
+10425,26,Indore,Two year,Fiber,9,68.09,2,70585.0,Yes
+10426,23,Indore,Month-to-month,DSL,72,90.36,0,65381.0,No
+10427,33,Jaipur,Month-to-month,None,71,101.74,2,73364.0,Yes
+10428,51,Mumbai,Two year,Fiber,22,73.09,1,28733.0,No
+10429,24,Surat,Month-to-month,Fiber,32,52.81,3,46355.0,Yes
+10430,60,Chennai,Month-to-month,DSL,28,39.15,1,44166.0,Yes
+10431,34,Hyderabad,Month-to-month,DSL,24,47.58,1,71031.0,Yes
+10432,34,Mumbai,Month-to-month,DSL,36,65.88,3,33604.0,Yes
+10433,53,Kolkata,Month-to-month,Fiber,13,19.47,1,47153.0,Yes
+10434,63,Indore,One year,DSL,13,66.66,1,76208.0,No
+10435,41,Jaipur,Two year,DSL,10,64.73,2,62463.0,No
+10436,60,Jaipur,Two year,DSL,28,79.18,3,46160.0,No
+10437,34,Lucknow,Month-to-month,None,21,57.64,3,81918.0,Yes
+10438,24,Hyderabad,Month-to-month,Fiber,20,67.25,3,31249.0,Yes
+10439,61,Jaipur,Month-to-month,DSL,40,48.81,3,59380.0,Yes
+10440,58,Surat,Two year,DSL,14,54.79,3,48635.0,No
+10441,57,Bengaluru,Month-to-month,DSL,19,25.99,5,60286.0,No
+10442,64,Surat,Month-to-month,DSL,29,67.72,1,47870.0,Yes
+10443,44,Pune,Two year,Fiber,66,99.07,1,39026.0,No
+10444,28,Pune,Month-to-month,Fiber,65,68.58,1,55584.0,No
+10445,49,Surat,Month-to-month,DSL,34,73.05,1,31435.0,Yes
+10446,48,Hyderabad,One year,DSL,23,43.4,0,60592.0,No
+10447,38,Kolkata,Month-to-month,None,33,96.49,1,47173.0,Yes
+10448,51,Kolkata,Two year,None,33,48.13,1,66766.0,No
+10449,31,Indore,Month-to-month,Fiber,40,82.64,1,45147.0,Yes
+10450,50,Jaipur,Month-to-month,None,21,67.36,0,41601.0,Yes
+10451,60,Jaipur,Month-to-month,Fiber,6,43.9,3,58503.0,Yes
+10452,23,Indore,One year,Fiber,34,87.6,1,71677.0,No
+10453,42,Surat,Month-to-month,None,15,65.34,0,19522.0,Yes
+10454,53,Indore,Two year,Fiber,21,68.93,1,54079.0,No
+10455,20,Mumbai,Two year,DSL,12,74.95,3,62072.0,Yes
+10456,51,Bengaluru,Two year,DSL,25,64.53,2,29775.0,No
+10457,66,Indore,Month-to-month,DSL,7,56.67,0,38301.0,Yes
+10458,61,Indore,Month-to-month,None,17,75.26,0,62333.0,Yes
+10459,54,Jaipur,Month-to-month,DSL,34,56.1,4,39146.0,Yes
+10460,60,Chennai,Two year,Fiber,18,66.44,2,42120.0,No
+10461,37,Surat,One year,Fiber,17,50.31,2,79272.0,No
+10462,35,Delhi,Month-to-month,DSL,47,32.22,1,37311.0,No
+10463,22,Chennai,One year,DSL,72,50.19,1,38561.0,No
+10464,56,Pune,Two year,DSL,19,54.11,2,15683.0,No
+10465,34,Kochi,Two year,DSL,18,65.33,1,34905.0,No
+10466,63,Chennai,One year,DSL,10,91.06,1,32760.0,Yes
+10467,42,Kolkata,Two year,DSL,27,27.83,4,79220.0,No
+10468,65,Hyderabad,Two year,DSL,40,67.83,2,71360.0,No
+10469,25,Hyderabad,Month-to-month,DSL,26,18.0,1,32222.0,No
+10470,26,Chennai,Month-to-month,Fiber,15,41.99,0,83172.0,Yes
+10471,36,Hyderabad,One year,Fiber,30,53.84,1,64315.0,No
+10472,19,Lucknow,Month-to-month,Fiber,22,18.0,1,49319.0,Yes
+10473,44,Indore,Month-to-month,None,17,24.13,2,64914.0,Yes
+10474,52,Kochi,Two year,DSL,9,68.39,1,58170.0,No
+10475,53,Chennai,One year,None,29,66.71,4,40093.0,Yes
+10476,29,Bengaluru,Month-to-month,DSL,22,62.5,1,24413.0,No
+10477,26,Delhi,Two year,None,48,47.32,1,37809.0,No
+10478,47,Kolkata,Month-to-month,DSL,13,112.4,3,52067.0,Yes
+10479,51,Lucknow,Two year,None,23,61.45,1,46526.0,No
+10480,68,Hyderabad,Two year,Fiber,29,46.03,0,40481.0,No
+10481,65,Kochi,Month-to-month,None,15,101.92,2,67520.0,Yes
+10482,38,Lucknow,Month-to-month,Fiber,17,78.51,0,35353.0,Yes
+10483,26,Delhi,Month-to-month,DSL,18,56.84,0,66199.0,Yes
+10484,31,Bengaluru,Two year,DSL,28,91.24,0,44536.0,No
+10485,64,Mumbai,Month-to-month,Fiber,57,68.45,3,53861.0,Yes
+10486,42,Delhi,Month-to-month,Fiber,30,79.15,0,34462.0,Yes
+10487,70,Jaipur,Two year,Fiber,6,70.17,6,52002.0,Yes
+10488,52,Lucknow,One year,Fiber,11,42.37,3,39790.0,Yes
+10489,49,Hyderabad,One year,DSL,21,86.37,0,24601.0,No
+10490,23,Lucknow,One year,DSL,34,68.53,0,51822.0,No
+10491,49,Lucknow,Month-to-month,Fiber,25,42.79,2,51317.0,Yes
+10492,38,Kochi,Month-to-month,Fiber,32,48.22,0,65203.0,No
+10493,62,Chennai,Month-to-month,Fiber,12,86.02,2,56605.0,Yes
+10494,25,Chennai,Month-to-month,DSL,72,56.87,1,36130.0,No
+10495,28,Jaipur,Month-to-month,DSL,17,66.02,1,42447.0,Yes
+10496,53,Chennai,One year,None,6,79.4,2,15000.0,Yes
+10497,54,Kochi,One year,DSL,22,67.82,2,34450.0,Yes
+10498,62,Surat,One year,DSL,63,31.41,2,72582.0,No
+10499,45,Delhi,Month-to-month,Fiber,10,79.02,0,76013.0,Yes
+10500,37,Surat,Month-to-month,Fiber,32,85.64,1,64144.0,Yes
+10501,34,Chennai,Two year,DSL,29,84.07,2,56884.0,No
+10502,37,Delhi,Month-to-month,Fiber,55,100.57,4,61378.0,Yes
+10503,53,Kolkata,Month-to-month,Fiber,27,73.01,0,59786.0,Yes
+10504,46,Pune,Month-to-month,Fiber,38,82.09,2,24748.0,Yes
+10505,33,Pune,Two year,DSL,26,99.96,1,38336.0,No
+10506,29,Pune,Month-to-month,None,30,58.6,1,70805.0,No
+10507,55,Hyderabad,Month-to-month,DSL,11,103.2,1,70728.0,Yes
+10508,31,Bengaluru,Month-to-month,Fiber,9,103.16,3,55893.0,Yes
+10509,29,Bengaluru,One year,Fiber,25,82.23,1,47206.0,No
+10510,35,Chennai,Two year,Fiber,21,105.47,0,46025.0,No
+10511,63,Surat,One year,None,24,83.74,0,43519.0,No
+10512,42,Bengaluru,Month-to-month,Fiber,47,45.62,0,37474.0,No
+10513,49,Indore,Month-to-month,Fiber,8,90.02,2,21682.0,Yes
+10514,22,Surat,One year,DSL,21,72.18,1,54447.0,No
+10515,36,Surat,Two year,Fiber,44,74.1,1,44954.0,No
+10516,57,Pune,Month-to-month,Fiber,8,68.4,5,48710.0,Yes
+10517,58,Mumbai,One year,Fiber,10,94.91,1,79167.0,Yes
+10518,48,Delhi,Month-to-month,Fiber,4,77.15,3,61440.0,Yes
+10519,64,Chennai,Month-to-month,DSL,32,49.69,3,41001.0,Yes
+10520,33,Chennai,Month-to-month,Fiber,29,75.69,4,61259.0,Yes
+10521,26,Surat,One year,Fiber,6,81.04,4,28323.0,Yes
+10522,22,Jaipur,Two year,DSL,44,49.04,4,68703.0,No
+10523,28,Jaipur,One year,DSL,15,55.45,2,56250.0,No
+10524,58,Indore,Month-to-month,Fiber,17,56.57,0,49025.0,Yes
+10525,65,Bengaluru,One year,Fiber,29,51.64,3,61114.0,No
+10526,24,Bengaluru,Month-to-month,DSL,35,72.67,4,75095.0,Yes
+10527,44,Hyderabad,Month-to-month,Fiber,10,87.39,2,44752.0,Yes
+10528,25,Lucknow,Month-to-month,Fiber,25,106.63,3,36470.0,Yes
+10529,62,Jaipur,Month-to-month,None,20,91.28,2,85513.0,Yes
+10530,24,Chennai,Month-to-month,Fiber,51,87.49,2,52330.0,Yes
+10531,51,Jaipur,Month-to-month,Fiber,12,90.15,1,75711.0,Yes
+10532,22,Mumbai,Month-to-month,Fiber,51,94.38,3,41395.0,Yes
+10533,57,Surat,Month-to-month,DSL,4,56.71,2,58066.0,Yes
+10534,66,Jaipur,Month-to-month,DSL,32,80.26,0,41939.0,Yes
+10535,56,Surat,Two year,None,54,72.09,1,62102.0,No
+10536,32,Mumbai,Two year,Fiber,33,62.15,3,47705.0,No
+10537,62,Bengaluru,Month-to-month,DSL,48,54.99,0,41476.0,No
+10538,34,Pune,One year,DSL,41,53.88,2,76628.0,No
+10539,57,Chennai,Two year,Fiber,6,59.1,2,57449.0,No
+10540,62,Pune,Month-to-month,Fiber,13,37.84,4,19946.0,Yes
+10541,43,Hyderabad,One year,DSL,45,76.48,3,48344.0,No
+10542,50,Chennai,Month-to-month,Fiber,25,64.52,1,37544.0,Yes
+10543,63,Lucknow,One year,Fiber,19,67.33,0,32773.0,No
+10544,27,Lucknow,Two year,Fiber,52,72.45,3,42823.0,No
+10545,19,Lucknow,Month-to-month,Fiber,29,80.95,2,44498.0,Yes
+10546,41,Kochi,Two year,DSL,8,51.98,1,52588.0,No
+10547,27,Kolkata,One year,Fiber,23,62.66,3,39490.0,No
+10548,64,Lucknow,One year,Fiber,16,29.61,2,22553.0,No
+10549,63,Hyderabad,One year,None,10,18.0,2,43566.0,No
+10550,37,Jaipur,Two year,Fiber,18,22.31,1,65995.0,No
+10551,34,Kochi,Month-to-month,DSL,15,98.81,3,30405.0,Yes
+10552,55,Bengaluru,One year,DSL,21,24.82,2,61859.0,No
+10553,42,Mumbai,Month-to-month,DSL,20,75.39,1,59324.0,Yes
+10554,23,Kochi,Month-to-month,DSL,16,97.5,2,44941.0,Yes
+10555,53,Indore,One year,Fiber,15,54.93,2,56952.0,No
+10556,56,Kolkata,Month-to-month,DSL,21,100.86,3,40160.0,Yes
+10557,21,Surat,Month-to-month,Fiber,19,105.64,0,45695.0,Yes
+10558,59,Jaipur,One year,DSL,21,85.8,1,35835.0,No
+10559,46,Kochi,Two year,DSL,20,117.2,5,59420.0,Yes
+10560,61,Lucknow,One year,Fiber,11,78.7,2,73787.0,Yes
+10561,63,Hyderabad,Month-to-month,Fiber,24,48.97,3,41260.0,Yes
+10562,53,Bengaluru,One year,DSL,9,76.53,2,71035.0,Yes
+10563,35,Hyderabad,Month-to-month,DSL,30,55.3,2,18142.0,Yes
+10564,37,Indore,One year,DSL,58,36.4,1,37971.0,No
+10565,56,Bengaluru,One year,DSL,19,37.01,4,35954.0,No
+10566,21,Pune,One year,DSL,22,115.95,2,79375.0,No
+10567,30,Kochi,Month-to-month,Fiber,72,53.2,4,42635.0,No
+10568,45,Bengaluru,Month-to-month,DSL,20,64.6,1,64412.0,Yes
+10569,67,Kochi,One year,Fiber,9,50.55,1,19459.0,Yes
+10570,58,Kolkata,Month-to-month,DSL,27,68.19,1,53839.0,Yes
+10571,61,Kolkata,One year,Fiber,10,59.93,0,61020.0,No
+10572,28,Surat,Month-to-month,None,33,56.17,1,51431.0,No
+10573,32,Mumbai,Month-to-month,Fiber,8,38.56,1,15000.0,Yes
+10574,32,Kochi,Month-to-month,None,23,34.14,1,54831.0,No
+10575,57,Surat,One year,DSL,26,48.87,2,64922.0,No
+10576,46,Mumbai,Two year,Fiber,43,71.7,1,73039.0,No
+10577,29,Delhi,Two year,DSL,28,110.95,2,58360.0,No
+10578,57,Bengaluru,Month-to-month,Fiber,9,88.46,0,25131.0,Yes
+10579,51,Surat,One year,Fiber,25,105.41,1,48686.0,No
+10580,65,Kochi,Month-to-month,DSL,23,75.99,2,66403.0,Yes
+10581,47,Hyderabad,One year,Fiber,54,63.41,1,38979.0,No
+10582,24,Surat,Month-to-month,Fiber,16,36.19,4,61013.0,Yes
+10583,65,Pune,Month-to-month,Fiber,18,65.4,0,44386.0,Yes
+10584,27,Kolkata,Month-to-month,DSL,28,18.18,1,53483.0,No
+10585,20,Indore,Month-to-month,DSL,18,58.76,2,64088.0,No
+10586,60,Kolkata,One year,None,9,101.2,4,40715.0,Yes
+10587,41,Jaipur,One year,Fiber,12,72.63,0,97662.0,No
+10588,52,Chennai,One year,DSL,23,90.23,2,54430.0,No
+10589,24,Mumbai,Month-to-month,DSL,21,57.01,0,57477.0,Yes
+10590,56,Mumbai,One year,Fiber,10,35.15,0,40186.0,No
+10591,39,Pune,Month-to-month,Fiber,18,54.9,1,52998.0,Yes
+10592,70,Lucknow,One year,None,22,56.72,4,47729.0,No
+10593,51,Mumbai,Month-to-month,DSL,3,91.98,1,28723.0,Yes
+10594,67,Delhi,One year,DSL,6,108.93,1,27566.0,Yes
+10595,60,Pune,Month-to-month,DSL,3,49.19,1,56584.0,Yes
+10596,62,Kolkata,Month-to-month,None,5,57.59,1,50602.0,Yes
+10597,22,Surat,Month-to-month,DSL,24,62.3,2,15000.0,Yes
+10598,59,Kochi,Month-to-month,Fiber,23,57.83,0,17747.0,Yes
+10599,49,Chennai,Month-to-month,Fiber,4,38.15,1,47073.0,Yes
+10600,38,Jaipur,One year,DSL,33,67.57,3,50904.0,No
+10601,34,Jaipur,Two year,Fiber,39,73.5,2,61713.0,No
+10602,51,Lucknow,Month-to-month,None,21,74.03,0,32201.0,No
+10603,28,Hyderabad,Month-to-month,None,27,39.0,1,61462.0,No
+10604,27,Jaipur,One year,DSL,27,63.05,4,47083.0,Yes
+10605,64,Bengaluru,Month-to-month,DSL,13,27.28,2,43890.0,Yes
+10606,58,Bengaluru,Two year,Fiber,52,85.66,5,49735.0,Yes
+10607,49,Surat,Month-to-month,DSL,10,43.14,5,67760.0,Yes
+10608,58,Jaipur,Month-to-month,Fiber,15,59.54,0,60916.0,Yes
+10609,35,Lucknow,Month-to-month,DSL,2,55.71,1,66224.0,Yes
+10610,56,Kochi,Month-to-month,Fiber,34,52.76,1,41000.0,Yes
+10611,28,Kolkata,Month-to-month,DSL,13,42.31,0,47458.0,Yes
+10612,41,Chennai,Month-to-month,Fiber,57,26.73,2,33402.0,No
+10613,25,Pune,One year,None,54,103.75,1,43146.0,No
+10614,38,Surat,Two year,DSL,2,71.25,1,45657.0,No
+10615,36,Delhi,Month-to-month,Fiber,18,71.48,1,44550.0,Yes
+10616,40,Jaipur,One year,Fiber,20,111.82,1,63408.0,No
+10617,43,Delhi,Month-to-month,Fiber,15,63.44,3,58802.0,Yes
+10618,19,Surat,One year,DSL,10,77.81,0,64147.0,No
+10619,36,Surat,Month-to-month,None,16,66.12,2,54051.0,Yes
+10620,62,Indore,Month-to-month,DSL,21,91.78,2,69161.0,Yes
+10621,40,Chennai,Two year,Fiber,20,76.71,0,53819.0,No
+10622,46,Chennai,One year,DSL,17,72.59,0,67449.0,No
+10623,23,Kochi,Month-to-month,Fiber,26,60.06,2,60047.0,Yes
+10624,38,Chennai,Month-to-month,Fiber,17,71.84,1,63763.0,Yes
+10625,69,Surat,Two year,DSL,48,91.29,1,50928.0,No
+10626,47,Indore,Two year,DSL,11,20.0,1,32181.0,No
+10627,19,Mumbai,One year,DSL,19,62.86,2,28884.0,Yes
+10628,56,Delhi,Two year,Fiber,28,56.51,0,83318.0,No
+10629,58,Delhi,Two year,None,30,59.1,1,58205.0,No
+10630,38,Indore,One year,Fiber,49,22.24,2,59095.0,No
+10631,19,,One year,Fiber,13,81.8,1,49330.0,Yes
+10632,62,Surat,Month-to-month,DSL,37,47.11,0,44663.0,Yes
+10633,31,Lucknow,Month-to-month,None,20,60.72,4,97948.0,Yes
+10634,66,Lucknow,One year,Fiber,4,54.63,4,34081.0,Yes
+10635,37,Chennai,Two year,DSL,35,28.98,2,50996.0,No
+10636,38,Jaipur,Month-to-month,DSL,7,55.9,2,51179.0,Yes
+10637,60,Delhi,Month-to-month,DSL,14,25.2,2,33904.0,Yes
+10638,25,Pune,Month-to-month,Fiber,28,44.98,2,31652.0,Yes
+10639,19,Indore,One year,DSL,13,58.79,2,40749.0,No
+10640,58,Indore,Month-to-month,DSL,10,65.62,1,46499.0,Yes
+10641,67,Pune,One year,DSL,28,66.94,1,44230.0,No
+10642,70,Jaipur,Month-to-month,None,38,62.7,3,65012.0,Yes
+10643,24,Jaipur,One year,DSL,13,112.75,3,33141.0,Yes
+10644,25,Mumbai,One year,DSL,16,75.3,1,58475.0,Yes
+10645,35,Pune,Month-to-month,None,26,38.85,2,75498.0,No
+10646,55,Kochi,Month-to-month,Fiber,21,52.26,2,66287.0,Yes
+10647,66,Pune,Month-to-month,None,17,51.27,3,33773.0,Yes
+10648,61,Bengaluru,One year,DSL,59,61.83,2,15000.0,No
+10649,37,Kochi,Month-to-month,Fiber,16,52.45,2,65525.0,Yes
+10650,66,Mumbai,Month-to-month,DSL,10,46.91,1,59948.0,Yes
+10651,31,Jaipur,Month-to-month,Fiber,15,102.01,0,42629.0,Yes
+10652,24,Hyderabad,Month-to-month,DSL,26,66.7,0,72491.0,No
+10653,41,Kochi,Two year,DSL,12,58.31,2,45527.0,No
+10654,22,Indore,Two year,None,10,60.18,2,53727.0,No
+10655,53,Hyderabad,Two year,DSL,6,60.96,1,35390.0,No
+10656,70,Kochi,Two year,DSL,67,96.38,1,57105.0,No
+10657,23,Kolkata,One year,DSL,29,76.26,1,45116.0,Yes
+10658,24,Hyderabad,Month-to-month,DSL,8,90.45,0,43944.0,No
+10659,27,Kochi,Two year,Fiber,28,18.0,2,69278.0,No
+10660,27,Lucknow,One year,Fiber,27,72.92,3,55431.0,No
+10661,46,Surat,One year,Fiber,42,89.05,0,28072.0,No
+10662,48,Kolkata,One year,Fiber,10,109.17,3,63064.0,Yes
+10663,68,Mumbai,Two year,Fiber,42,66.41,1,65385.0,No
+10664,41,Hyderabad,Month-to-month,Fiber,34,27.99,1,38685.0,No
+10665,67,Bengaluru,One year,Fiber,8,78.72,1,45712.0,Yes
+10666,57,Mumbai,Month-to-month,Fiber,23,52.59,1,52861.0,Yes
+10667,63,Mumbai,Month-to-month,DSL,23,26.35,2,48010.0,Yes
+10668,28,Kochi,Month-to-month,Fiber,25,52.16,4,53982.0,Yes
+10669,42,Indore,Month-to-month,Fiber,3,89.01,2,62399.0,Yes
+10670,66,Delhi,Month-to-month,None,24,92.22,0,44132.0,Yes
+10671,57,Indore,Month-to-month,DSL,15,81.66,3,85293.0,Yes
+10672,29,Kolkata,Month-to-month,DSL,34,42.73,2,40610.0,Yes
+10673,62,Lucknow,Two year,DSL,23,120.0,1,43377.0,No
+10674,58,Delhi,One year,DSL,13,40.07,0,83502.0,No
+10675,25,Lucknow,One year,Fiber,9,64.09,2,90153.0,No
+10676,21,Jaipur,Two year,DSL,16,34.02,2,52602.0,No
+10677,31,Bengaluru,Month-to-month,Fiber,24,94.79,1,49004.0,Yes
+10678,43,Chennai,Month-to-month,Fiber,19,75.63,1,34833.0,Yes
+10679,26,Kolkata,Month-to-month,Fiber,6,85.36,1,70285.0,Yes
+10680,19,Bengaluru,Month-to-month,DSL,51,67.81,0,54770.0,No
+10681,23,Indore,Two year,Fiber,34,64.33,1,38461.0,No
+10682,34,Jaipur,Month-to-month,None,21,69.68,2,58495.0,No
+10683,38,Jaipur,One year,None,23,24.3,2,73928.0,No
+10684,34,Indore,Two year,None,29,87.72,0,62972.0,No
+10685,41,Indore,Month-to-month,DSL,23,85.95,1,87331.0,Yes
+10686,56,Kochi,One year,DSL,17,57.23,3,70554.0,No
+10687,31,Indore,Month-to-month,DSL,40,65.6,3,59049.0,Yes
+10688,42,Bengaluru,Month-to-month,Fiber,18,72.47,2,51476.0,Yes
+10689,56,Hyderabad,Month-to-month,DSL,16,100.43,1,60802.0,Yes
+10690,21,Hyderabad,Month-to-month,DSL,21,75.4,0,71477.0,Yes
+10691,67,Kochi,Month-to-month,Fiber,19,66.84,0,65740.0,No
+10692,70,Kolkata,Month-to-month,Fiber,23,54.71,2,68877.0,Yes
+10693,33,Kochi,Two year,DSL,72,32.84,2,55566.0,No
+10694,65,Surat,Month-to-month,None,14,52.81,1,64263.0,No
+10695,31,Jaipur,Month-to-month,Fiber,27,67.5,1,71444.0,Yes
+10696,66,Delhi,Two year,None,35,60.39,1,49353.0,No
+10697,52,Hyderabad,Month-to-month,Fiber,6,67.61,2,31262.0,Yes
+10698,31,Lucknow,Two year,DSL,17,82.35,0,79619.0,No
+10699,21,Kochi,Two year,Fiber,6,75.54,1,61333.0,No
+10700,38,Mumbai,One year,None,12,72.03,0,,Yes
+10701,57,Indore,Month-to-month,Fiber,6,80.42,1,55746.0,Yes
+10702,30,Indore,Month-to-month,Fiber,23,70.08,1,48047.0,Yes
+10703,45,Jaipur,Month-to-month,Fiber,13,65.31,3,24719.0,Yes
+10704,24,Mumbai,Month-to-month,DSL,38,76.33,0,49063.0,Yes
+10705,40,Hyderabad,Month-to-month,DSL,16,27.99,3,29217.0,Yes
+10706,19,Hyderabad,Month-to-month,Fiber,15,93.57,2,55244.0,Yes
+10707,70,Kochi,Two year,DSL,13,37.65,3,50252.0,No
+10708,44,Hyderabad,Month-to-month,Fiber,11,84.44,2,70137.0,Yes
+10709,62,Hyderabad,Two year,DSL,38,66.31,0,50079.0,No
+10710,24,Kochi,One year,None,7,90.42,2,57985.0,Yes
+10711,26,Delhi,Month-to-month,Fiber,42,66.82,2,47220.0,Yes
+10712,27,Bengaluru,One year,Fiber,17,45.28,0,45923.0,No
+10713,48,Hyderabad,Month-to-month,Fiber,7,89.68,4,29642.0,Yes
+10714,63,Lucknow,Month-to-month,Fiber,21,70.13,1,67847.0,Yes
+10715,50,Kolkata,Two year,DSL,13,68.69,1,54732.0,No
+10716,43,Surat,Month-to-month,Fiber,12,67.87,2,42675.0,Yes
+10717,67,Delhi,Month-to-month,DSL,43,88.12,2,55334.0,Yes
+10718,27,Kochi,Month-to-month,Fiber,30,84.09,2,45366.0,Yes
+10719,26,Lucknow,One year,DSL,1,71.17,1,40414.0,No
+10720,53,Chennai,Month-to-month,Fiber,17,31.99,1,55990.0,Yes
+10721,63,Pune,Month-to-month,Fiber,17,57.23,1,71441.0,Yes
+10722,32,Mumbai,One year,DSL,14,68.45,0,47688.0,No
+10723,31,Kolkata,Month-to-month,Fiber,51,105.62,3,29205.0,Yes
+10724,45,Lucknow,One year,Fiber,10,74.6,1,42165.0,No
+10725,59,Indore,Month-to-month,DSL,10,64.13,2,80758.0,Yes
+10726,32,Hyderabad,Month-to-month,Fiber,22,92.47,0,39022.0,Yes
+10727,61,Chennai,Month-to-month,None,40,63.71,0,71007.0,Yes
+10728,45,Kolkata,One year,Fiber,6,65.55,1,48176.0,Yes
+10729,55,Kochi,Two year,DSL,17,69.63,3,63843.0,No
+10730,51,Indore,One year,Fiber,16,33.22,1,50301.0,No
+10731,43,Hyderabad,Month-to-month,None,30,87.25,0,26762.0,Yes
+10732,46,Kochi,Month-to-month,None,71,75.55,2,45411.0,No
+10733,70,Indore,Month-to-month,DSL,33,59.97,1,85794.0,No
+10734,38,Kolkata,Month-to-month,Fiber,14,41.07,2,49893.0,Yes
+10735,68,Indore,Month-to-month,Fiber,11,70.9,1,61037.0,Yes
+10736,59,Bengaluru,Month-to-month,DSL,2,97.0,1,46621.0,Yes
+10737,27,Pune,Two year,Fiber,21,52.1,4,49892.0,Yes
+10738,64,Chennai,One year,DSL,35,42.85,1,57158.0,No
+10739,38,Lucknow,Two year,None,31,75.46,3,59587.0,No
+10740,27,Mumbai,One year,Fiber,13,31.09,1,87516.0,No
+10741,31,Kochi,Month-to-month,Fiber,51,18.0,1,51759.0,No
+10742,25,Chennai,Month-to-month,None,8,56.44,0,49129.0,Yes
+10743,35,Jaipur,Month-to-month,None,39,51.05,2,41418.0,Yes
+10744,23,Hyderabad,Month-to-month,Fiber,27,60.14,2,31006.0,No
+10745,46,Kolkata,Month-to-month,Fiber,13,54.11,4,26262.0,Yes
+10746,69,Surat,One year,DSL,38,73.55,2,62628.0,No
+10747,69,Kolkata,Month-to-month,DSL,8,61.39,1,22236.0,Yes
+10748,67,Mumbai,Month-to-month,None,10,53.07,2,74519.0,Yes
+10749,30,Kolkata,Month-to-month,Fiber,25,56.18,2,65765.0,Yes
+10750,30,Kolkata,One year,DSL,60,80.15,1,47305.0,No
+10751,53,Pune,One year,DSL,35,87.35,7,33563.0,Yes
+10752,69,Jaipur,One year,None,12,86.16,1,52483.0,No
+10753,61,Jaipur,Month-to-month,DSL,54,81.61,0,52385.0,No
+10754,29,Surat,Month-to-month,Fiber,72,18.0,1,70068.0,No
+10755,57,Lucknow,Month-to-month,Fiber,24,44.24,4,40169.0,Yes
+10756,44,Surat,Month-to-month,DSL,21,59.36,0,45996.0,Yes
+10757,41,Kolkata,One year,Fiber,9,70.81,0,51197.0,No
+10758,44,Jaipur,Two year,DSL,9,30.71,3,47608.0,No
+10759,46,Chennai,One year,DSL,6,97.58,5,42057.0,Yes
+10760,66,Kolkata,Month-to-month,DSL,9,72.97,4,24613.0,Yes
+10761,59,Delhi,Month-to-month,DSL,5,52.64,2,25814.0,Yes
+10762,20,Kochi,Two year,Fiber,16,69.9,0,41238.0,No
+10763,58,Lucknow,Two year,DSL,11,58.69,3,48456.0,Yes
+10764,34,Pune,One year,Fiber,15,49.6,4,68029.0,Yes
+10765,35,Delhi,Month-to-month,DSL,26,77.45,0,88997.0,No
+10766,49,Lucknow,Month-to-month,Fiber,8,56.34,4,79475.0,Yes
+10767,70,Bengaluru,One year,Fiber,11,35.26,2,58375.0,No
+10768,21,Indore,Two year,DSL,21,52.35,2,82104.0,No
+10769,45,Mumbai,Month-to-month,DSL,72,63.81,3,50197.0,No
+10770,30,Delhi,Month-to-month,None,34,42.58,1,43626.0,Yes
+10771,66,Surat,Month-to-month,DSL,3,94.08,0,89065.0,Yes
+10772,42,Kolkata,Month-to-month,DSL,31,42.38,2,34986.0,Yes
+10773,63,Surat,Two year,DSL,27,105.01,1,45427.0,No
+10774,64,Bengaluru,One year,Fiber,16,86.03,1,47850.0,No
+10775,23,Hyderabad,Two year,Fiber,10,45.64,0,75407.0,No
+10776,58,Mumbai,Month-to-month,None,25,69.23,0,42549.0,No
+10777,59,Pune,Month-to-month,DSL,59,92.37,1,64557.0,No
+10778,61,Pune,One year,Fiber,37,62.17,2,45550.0,No
+10779,70,Delhi,One year,Fiber,15,40.14,4,32492.0,Yes
+10780,58,Jaipur,Month-to-month,None,15,68.85,2,55834.0,Yes
+10781,62,Bengaluru,Month-to-month,Fiber,28,110.18,1,54753.0,Yes
+10782,55,Kolkata,One year,Fiber,27,33.62,3,33574.0,No
+10783,33,Delhi,One year,None,47,78.62,3,38221.0,No
+10784,63,Hyderabad,Month-to-month,DSL,20,66.64,2,39382.0,Yes
+10785,55,Mumbai,Month-to-month,None,17,63.84,2,67481.0,Yes
+10786,54,Kolkata,Two year,None,13,57.87,2,59454.0,No
+10787,69,Bengaluru,Month-to-month,None,15,59.42,2,55883.0,Yes
+10788,56,Kolkata,One year,Fiber,12,89.29,1,59918.0,No
+10789,35,Chennai,Month-to-month,Fiber,11,79.6,0,44457.0,Yes
+10790,33,Chennai,Month-to-month,DSL,5,44.53,4,59715.0,Yes
+10791,35,Surat,Month-to-month,Fiber,12,100.78,3,42403.0,Yes
+10792,26,Kochi,Month-to-month,Fiber,27,37.95,0,30772.0,Yes
+10793,22,Kolkata,Month-to-month,DSL,41,81.08,0,40838.0,No
+10794,58,Lucknow,Month-to-month,None,19,70.55,0,55454.0,Yes
+10795,59,Lucknow,Month-to-month,DSL,58,92.88,3,53526.0,Yes
+10796,26,Pune,Month-to-month,Fiber,50,74.36,1,69003.0,No
+10797,38,Surat,Month-to-month,Fiber,3,89.76,1,25080.0,Yes
+10798,66,Jaipur,Two year,DSL,22,66.0,1,48577.0,No
+10799,62,Indore,Month-to-month,DSL,22,87.94,1,58406.0,Yes
+10800,49,Delhi,Month-to-month,Fiber,30,74.13,1,36699.0,No
+10801,69,Chennai,Two year,DSL,42,113.83,1,56082.0,No
+10802,35,Kochi,Month-to-month,Fiber,15,51.25,2,45554.0,Yes
+10803,62,Hyderabad,Month-to-month,Fiber,38,92.84,0,34027.0,No
+10804,67,Pune,Month-to-month,Fiber,4,76.79,2,70035.0,Yes
+10805,49,Kochi,Month-to-month,DSL,30,70.46,1,29885.0,Yes
+10806,26,Jaipur,Month-to-month,DSL,7,54.12,0,68105.0,No
+10807,33,Kochi,Two year,DSL,7,76.43,2,45486.0,No
+10808,45,Kochi,Two year,None,36,34.17,1,37069.0,No
+10809,32,Lucknow,Month-to-month,None,12,36.49,4,37959.0,Yes
+10810,22,Pune,Month-to-month,DSL,31,82.26,2,40314.0,Yes
+10811,27,Indore,Two year,Fiber,19,32.4,1,38556.0,No
+10812,69,Delhi,Month-to-month,DSL,24,98.22,4,56416.0,Yes
+10813,38,Bengaluru,One year,Fiber,15,60.58,0,22232.0,No
+10814,48,Surat,Two year,Fiber,5,72.11,0,71947.0,No
+10815,41,Kochi,One year,Fiber,45,68.28,0,65472.0,No
+10816,60,Lucknow,Two year,Fiber,45,75.88,1,74312.0,No
+10817,23,Hyderabad,Month-to-month,DSL,22,60.5,2,36401.0,Yes
+10818,32,Hyderabad,Two year,Fiber,19,58.56,4,15048.0,No
+10819,48,Kochi,Month-to-month,None,11,63.87,1,42143.0,No
+10820,60,Hyderabad,Month-to-month,DSL,10,89.73,0,49442.0,Yes
+10821,42,Lucknow,Month-to-month,Fiber,9,91.58,1,56976.0,Yes
+10822,55,Indore,Month-to-month,DSL,7,94.68,2,43837.0,Yes
+10823,60,Mumbai,One year,DSL,18,74.7,5,50788.0,No
+10824,52,Lucknow,Two year,DSL,44,62.25,1,54524.0,No
+10825,61,Indore,Month-to-month,None,14,29.71,5,27363.0,Yes
+10826,68,Bengaluru,Month-to-month,Fiber,27,80.81,2,81020.0,Yes
+10827,29,Pune,Month-to-month,Fiber,28,85.16,0,34186.0,Yes
+10828,40,Lucknow,Month-to-month,Fiber,11,57.8,3,56349.0,Yes
+10829,29,Surat,Two year,Fiber,32,84.43,6,69396.0,No
+10830,39,Hyderabad,Two year,Fiber,19,95.03,0,39632.0,No
+10831,18,Pune,Two year,DSL,50,68.75,0,52204.0,No
+10832,54,Indore,One year,DSL,47,89.93,2,78267.0,No
+10833,30,Mumbai,One year,DSL,17,73.45,1,47656.0,No
+10834,62,Mumbai,Month-to-month,Fiber,17,28.51,2,68880.0,Yes
+10835,56,Indore,Month-to-month,Fiber,57,56.28,1,56823.0,Yes
+10836,35,Surat,Month-to-month,Fiber,10,57.66,1,55825.0,Yes
+10837,42,Kochi,Two year,DSL,63,78.33,1,63653.0,No
+10838,53,Hyderabad,Month-to-month,Fiber,46,47.69,5,48477.0,Yes
+10839,40,Bengaluru,Month-to-month,DSL,14,57.03,4,48827.0,Yes
+10840,29,Surat,Month-to-month,Fiber,19,45.52,1,67563.0,Yes
+10841,20,Jaipur,Month-to-month,DSL,36,65.84,2,56368.0,Yes
+10842,47,Delhi,One year,None,8,68.22,5,60150.0,Yes
+10843,46,Surat,Month-to-month,DSL,9,88.13,1,33069.0,Yes
+10844,58,Hyderabad,Month-to-month,Fiber,36,84.22,1,52466.0,Yes
+10845,24,Chennai,Two year,DSL,26,70.31,4,71596.0,No
+10846,21,Bengaluru,Two year,Fiber,27,72.0,1,66592.0,No
+10847,57,Indore,One year,DSL,72,69.08,5,57713.0,No
+10848,56,Jaipur,One year,DSL,24,69.17,2,43941.0,No
+10849,60,Kochi,Month-to-month,Fiber,15,100.72,1,42426.0,Yes
+10850,18,Bengaluru,Two year,Fiber,40,18.0,1,59233.0,No
+10851,52,Indore,One year,Fiber,31,62.83,5,74915.0,Yes
+10852,68,Kochi,Month-to-month,Fiber,14,73.57,2,52922.0,Yes
+10853,58,Jaipur,Month-to-month,None,10,91.55,0,73093.0,Yes
+10854,42,Kochi,Month-to-month,DSL,28,42.62,0,47447.0,No
+10855,43,Mumbai,Month-to-month,DSL,15,74.33,1,71442.0,Yes
+10856,39,Lucknow,Month-to-month,Fiber,11,85.66,1,36261.0,Yes
+10857,20,Surat,Month-to-month,Fiber,12,56.9,3,55230.0,Yes
+10858,56,Pune,Month-to-month,Fiber,48,24.7,3,35178.0,Yes
+10859,46,Indore,Month-to-month,None,18,58.78,1,62795.0,Yes
+10860,45,Pune,Month-to-month,Fiber,24,40.28,2,61403.0,Yes
+10861,67,Pune,Month-to-month,Fiber,6,81.02,0,37066.0,Yes
+10862,56,Bengaluru,Month-to-month,None,7,47.98,2,40341.0,Yes
+10863,68,Kochi,Month-to-month,Fiber,4,105.87,2,45166.0,Yes
+10864,22,Pune,One year,DSL,22,69.81,1,28448.0,No
+10865,68,Bengaluru,Month-to-month,Fiber,12,48.98,1,37440.0,Yes
+10866,47,Kolkata,Month-to-month,Fiber,3,55.6,2,38426.0,Yes
+10867,39,Bengaluru,One year,Fiber,72,42.67,2,64746.0,No
+10868,47,Bengaluru,Month-to-month,Fiber,21,75.27,3,74360.0,Yes
+10869,19,Kochi,Month-to-month,Fiber,11,99.5,2,45146.0,Yes
+10870,67,Kolkata,One year,Fiber,39,61.96,0,47645.0,No
+10871,51,Surat,One year,DSL,27,87.04,2,55661.0,Yes
+10872,20,Delhi,Two year,Fiber,26,45.96,3,43906.0,No
+10873,66,Lucknow,Two year,Fiber,52,73.47,2,47798.0,No
+10874,41,Pune,One year,Fiber,18,117.38,3,65628.0,Yes
+10875,24,Jaipur,One year,DSL,34,35.77,2,55922.0,No
+10876,51,Bengaluru,Month-to-month,DSL,10,93.81,0,50885.0,Yes
+10877,21,Kolkata,One year,Fiber,8,92.52,1,43094.0,Yes
+10878,47,Kolkata,Month-to-month,Fiber,9,25.34,0,75757.0,Yes
+10879,58,Jaipur,Month-to-month,DSL,25,35.14,5,42435.0,Yes
+10880,21,Lucknow,Month-to-month,DSL,21,45.22,0,54181.0,No
+10881,59,Jaipur,Month-to-month,Fiber,14,88.01,3,35739.0,Yes
+10882,49,Chennai,Month-to-month,Fiber,27,57.26,2,42741.0,Yes
+10883,35,Delhi,One year,DSL,42,63.01,4,53752.0,No
+10884,29,Pune,One year,DSL,6,82.25,1,45935.0,No
+10885,18,Kochi,One year,DSL,31,69.28,4,60767.0,Yes
+10886,28,Mumbai,Month-to-month,DSL,38,71.65,0,53329.0,Yes
+10887,33,Indore,One year,None,26,59.62,2,30140.0,No
+10888,64,Hyderabad,Two year,None,29,91.41,3,15356.0,No
+10889,45,Kolkata,Month-to-month,Fiber,17,49.57,1,68146.0,Yes
+10890,28,Kochi,Month-to-month,None,8,103.53,3,42910.0,Yes
+10891,57,Hyderabad,Month-to-month,Fiber,42,59.24,4,75882.0,Yes
+10892,42,Jaipur,Month-to-month,Fiber,11,49.12,1,52463.0,Yes
+10893,62,Bengaluru,Month-to-month,DSL,30,80.89,3,40022.0,Yes
+10894,57,Kochi,Month-to-month,None,50,76.59,3,61151.0,Yes
+10895,67,Chennai,Month-to-month,Fiber,41,23.1,2,47899.0,No
+10896,55,Lucknow,One year,DSL,24,71.53,2,52431.0,No
+10897,23,Pune,Month-to-month,Fiber,24,36.95,2,37381.0,Yes
+10898,47,Hyderabad,One year,None,42,48.4,2,62427.0,No
+10899,40,Kolkata,Month-to-month,DSL,47,83.95,1,69731.0,Yes
+10900,60,Hyderabad,One year,DSL,9,47.67,3,43832.0,No
+10901,26,Bengaluru,One year,None,6,74.45,1,80728.0,Yes
+10902,42,Delhi,One year,Fiber,26,58.27,2,43134.0,Yes
+10903,61,Kochi,Month-to-month,DSL,30,109.14,1,56207.0,Yes
+10904,50,Bengaluru,Two year,Fiber,21,64.5,0,26085.0,No
+10905,20,Kochi,One year,Fiber,22,40.75,2,21489.0,No
+10906,61,Jaipur,Month-to-month,DSL,15,42.29,1,85806.0,Yes
+10907,37,Mumbai,Month-to-month,None,24,46.65,1,74982.0,No
+10908,53,Kochi,Month-to-month,Fiber,5,69.37,3,70564.0,Yes
+10909,52,Pune,Month-to-month,Fiber,29,66.49,3,25090.0,Yes
+10910,52,Kochi,Month-to-month,Fiber,38,87.87,0,55831.0,Yes
+10911,40,Mumbai,Month-to-month,DSL,29,70.21,2,58924.0,Yes
+10912,39,Kolkata,Month-to-month,Fiber,9,69.35,1,53485.0,Yes
+10913,23,Lucknow,One year,Fiber,15,73.64,2,56969.0,Yes
+10914,47,Chennai,Month-to-month,Fiber,25,63.65,1,37532.0,Yes
+10915,33,Kolkata,Month-to-month,DSL,19,72.92,1,49651.0,Yes
+10916,38,Jaipur,Month-to-month,Fiber,24,83.71,0,33998.0,Yes
+10917,26,Bengaluru,Month-to-month,Fiber,26,83.7,0,46626.0,No
+10918,57,Indore,Month-to-month,DSL,9,54.47,1,58145.0,Yes
+10919,66,Pune,Two year,DSL,28,27.56,1,39705.0,No
+10920,38,Indore,Month-to-month,DSL,72,48.66,3,47776.0,No
+10921,40,Surat,Month-to-month,DSL,15,72.64,4,45313.0,Yes
+10922,42,Chennai,Month-to-month,DSL,12,18.0,2,52437.0,Yes
+10923,21,Hyderabad,Month-to-month,Fiber,25,55.95,4,66904.0,Yes
+10924,58,Hyderabad,Two year,DSL,23,76.29,1,55970.0,No
+10925,64,Kochi,Two year,DSL,39,53.99,0,58505.0,No
+10926,44,Pune,Month-to-month,DSL,31,41.79,1,29177.0,No
+10927,21,Lucknow,Month-to-month,Fiber,39,104.96,0,46390.0,Yes
+10928,35,Jaipur,Month-to-month,Fiber,15,96.83,2,65255.0,Yes
+10929,26,Mumbai,Month-to-month,DSL,38,60.67,2,38427.0,Yes
+10930,61,Lucknow,One year,DSL,33,95.45,2,45256.0,No
+10931,60,Mumbai,One year,Fiber,45,94.91,1,36692.0,No
+10932,38,Chennai,One year,DSL,48,41.47,1,73493.0,No
+10933,37,Mumbai,One year,DSL,11,120.0,3,44946.0,Yes
+10934,62,Indore,Month-to-month,DSL,9,45.7,1,40519.0,Yes
+10935,22,Lucknow,Month-to-month,DSL,14,60.51,1,62037.0,Yes
+10936,59,Pune,Month-to-month,Fiber,49,42.19,4,69735.0,Yes
+10937,69,Hyderabad,One year,DSL,26,67.99,2,60062.0,Yes
+10938,41,Surat,Month-to-month,DSL,6,37.34,2,67850.0,Yes
+10939,57,Pune,Month-to-month,DSL,18,66.1,0,55535.0,No
+10940,55,Lucknow,Two year,Fiber,6,90.06,0,50098.0,Yes
+10941,65,Mumbai,Month-to-month,DSL,69,70.93,1,45116.0,No
+10942,19,Hyderabad,Month-to-month,DSL,30,60.41,1,44030.0,No
+10943,55,Lucknow,Month-to-month,Fiber,8,100.22,4,42610.0,Yes
+10944,38,Surat,Two year,DSL,27,46.48,3,58023.0,No
+10945,63,Pune,Month-to-month,DSL,72,87.49,1,50337.0,No
+10946,63,Pune,Month-to-month,DSL,28,59.54,3,53534.0,Yes
+10947,33,Lucknow,Month-to-month,None,7,70.92,3,61814.0,Yes
+10948,48,Mumbai,One year,None,16,66.86,1,51270.0,Yes
+10949,44,Hyderabad,Month-to-month,Fiber,33,68.97,4,30251.0,Yes
+10950,47,Delhi,Two year,None,60,64.97,2,39488.0,No
+10951,62,Surat,Month-to-month,None,35,48.93,0,34249.0,No
+10952,53,Kolkata,One year,None,32,53.61,1,21660.0,No
+10953,58,Bengaluru,Month-to-month,DSL,9,75.82,2,53797.0,Yes
+10954,53,Lucknow,Two year,None,34,63.71,0,32967.0,No
+10955,31,Pune,Month-to-month,None,55,40.49,1,31623.0,No
+10956,48,Bengaluru,One year,Fiber,11,50.54,2,34908.0,Yes
+10957,38,Pune,Two year,Fiber,11,50.8,3,66070.0,No
+10958,40,Surat,Month-to-month,DSL,11,64.82,1,47147.0,Yes
+10959,23,Pune,Month-to-month,None,27,69.93,1,68081.0,Yes
+10960,27,Bengaluru,One year,DSL,19,67.99,3,50674.0,Yes
+10961,36,Hyderabad,Month-to-month,DSL,61,51.59,4,45142.0,Yes
+10962,33,Surat,Month-to-month,None,49,66.35,1,61138.0,No
+10963,51,Kolkata,One year,DSL,33,35.83,2,61639.0,No
+10964,33,Jaipur,Month-to-month,DSL,27,18.0,3,53940.0,Yes
+10965,31,Pune,Month-to-month,DSL,6,64.7,1,35530.0,Yes
+10966,40,Kochi,Month-to-month,DSL,18,29.51,2,44793.0,No
+10967,48,Hyderabad,Month-to-month,DSL,21,45.04,3,33210.0,Yes
+10968,70,Hyderabad,Month-to-month,DSL,57,39.32,2,47967.0,No
+10969,45,Hyderabad,Month-to-month,Fiber,22,79.66,1,53581.0,No
+10970,36,Kolkata,Month-to-month,Fiber,44,39.19,1,75788.0,No
+10971,35,Indore,Month-to-month,Fiber,29,71.84,0,74664.0,No
+10972,41,Hyderabad,Month-to-month,DSL,33,55.0,3,62902.0,Yes
+10973,67,Kolkata,One year,Fiber,16,38.53,0,67332.0,No
+10974,37,Kolkata,Month-to-month,None,6,31.06,2,55755.0,Yes
+10975,31,Mumbai,Month-to-month,Fiber,37,75.83,1,96377.0,Yes
+10976,48,Indore,Month-to-month,None,43,74.14,1,76487.0,No
+10977,58,Hyderabad,Month-to-month,Fiber,4,82.64,1,94364.0,Yes
+10978,68,Lucknow,Month-to-month,None,15,105.88,1,58161.0,Yes
+10979,32,Jaipur,Month-to-month,None,20,71.55,2,58661.0,Yes
+10980,65,Lucknow,Month-to-month,Fiber,34,71.74,3,68884.0,Yes
+10981,63,Pune,One year,DSL,7,62.81,0,55072.0,No
+10982,37,Hyderabad,Two year,Fiber,72,67.83,1,57023.0,No
+10983,35,Pune,Two year,DSL,18,57.78,1,36265.0,No
+10984,32,Bengaluru,Month-to-month,DSL,29,45.79,1,67078.0,No
+10985,34,Lucknow,Month-to-month,DSL,21,109.3,1,54211.0,Yes
+10986,64,Jaipur,Month-to-month,Fiber,45,24.46,4,64983.0,Yes
+10987,34,Pune,Month-to-month,DSL,35,70.98,1,48513.0,Yes
+10988,44,Surat,Two year,DSL,43,75.12,1,23637.0,No
+10989,67,Mumbai,Month-to-month,Fiber,16,68.67,1,60051.0,Yes
+10990,54,Kochi,Month-to-month,DSL,28,44.18,2,70664.0,No
+10991,24,Lucknow,One year,DSL,33,61.1,1,31563.0,No
+10992,21,Delhi,One year,Fiber,72,55.15,0,36505.0,No
+10993,29,Delhi,Month-to-month,None,38,41.63,0,47211.0,No
+10994,63,Lucknow,Two year,DSL,22,64.22,1,48072.0,No
+10995,30,Kochi,Month-to-month,DSL,53,56.25,3,24832.0,Yes
+10996,34,Indore,One year,DSL,14,53.05,3,80106.0,No
+10997,46,Kolkata,Month-to-month,Fiber,29,80.19,2,68186.0,Yes
+10998,44,Kochi,Two year,DSL,28,41.84,4,42159.0,No
+10999,21,Hyderabad,Month-to-month,Fiber,16,74.8,2,23034.0,Yes
+11000,28,Kochi,Month-to-month,DSL,19,51.66,0,57810.0,Yes
+11001,70,Kochi,Two year,Fiber,30,74.47,1,83746.0,No
+11002,40,Kochi,Two year,DSL,5,66.58,3,65259.0,No
+11003,32,Surat,Two year,DSL,24,70.33,2,70475.0,No
+11004,61,Kolkata,Two year,None,3,43.48,2,36948.0,No
+11005,42,Surat,Month-to-month,DSL,3,47.96,0,55726.0,Yes
+11006,61,Hyderabad,Month-to-month,Fiber,41,46.16,1,28010.0,No
+11007,26,Mumbai,Month-to-month,Fiber,21,68.78,1,83658.0,Yes
+11008,43,Kochi,Month-to-month,DSL,35,81.36,1,61115.0,No
+11009,60,Pune,Two year,DSL,28,88.65,5,18320.0,Yes
+11010,58,Pune,Month-to-month,DSL,49,53.92,1,22438.0,No
+11011,53,Kochi,Month-to-month,DSL,19,66.77,0,59672.0,No
+11012,42,Delhi,Month-to-month,None,15,29.35,1,,Yes
+11013,61,Bengaluru,Month-to-month,Fiber,17,18.0,1,47025.0,Yes
+11014,37,Indore,Month-to-month,DSL,3,45.84,0,61847.0,Yes
+11015,52,Lucknow,Month-to-month,Fiber,35,50.22,1,84114.0,No
+11016,46,Indore,Two year,Fiber,4,30.72,1,57850.0,No
+11017,33,Lucknow,One year,None,29,25.76,0,23133.0,No
+11018,28,Mumbai,Month-to-month,Fiber,34,76.51,3,49447.0,Yes
+11019,46,Bengaluru,Two year,Fiber,8,47.14,3,31011.0,No
+11020,34,Lucknow,One year,DSL,8,27.86,1,39119.0,No
+11021,45,Lucknow,Month-to-month,DSL,7,115.71,4,57186.0,Yes
+11022,55,Jaipur,Two year,None,10,68.5,0,49244.0,No
+11023,60,Lucknow,Two year,None,16,57.72,1,34927.0,No
+11024,58,Bengaluru,One year,None,12,79.55,3,51519.0,No
+11025,45,Mumbai,Month-to-month,DSL,14,47.98,1,38881.0,No
+11026,21,Bengaluru,Two year,DSL,10,99.48,2,60401.0,No
+11027,27,Kochi,Two year,Fiber,62,30.84,2,48039.0,No
+11028,56,Mumbai,Month-to-month,None,22,35.92,1,58163.0,Yes
+11029,49,Kolkata,Month-to-month,DSL,13,61.56,1,47624.0,Yes
+11030,61,Pune,Two year,DSL,8,47.77,0,63868.0,No
+11031,44,Indore,One year,DSL,30,95.48,1,49714.0,No
+11032,41,Delhi,Month-to-month,None,21,29.35,3,51682.0,Yes
+11033,30,Jaipur,One year,DSL,37,48.46,3,42837.0,No
+11034,21,Kochi,Month-to-month,Fiber,21,69.69,2,54146.0,Yes
+11035,25,Surat,Two year,Fiber,33,76.79,1,23494.0,No
+11036,54,Surat,Month-to-month,Fiber,13,86.41,1,94526.0,Yes
+11037,48,Hyderabad,Month-to-month,DSL,4,71.94,1,40966.0,Yes
+11038,31,Bengaluru,Month-to-month,Fiber,13,112.73,4,53433.0,Yes
+11039,37,Kochi,Month-to-month,Fiber,9,53.97,3,44259.0,Yes
+11040,52,Bengaluru,Two year,Fiber,9,68.2,1,44034.0,No
+11041,38,Hyderabad,Month-to-month,Fiber,33,83.12,1,58271.0,Yes
+11042,37,Kolkata,Month-to-month,DSL,28,57.39,1,43658.0,Yes
+11043,32,Lucknow,Two year,DSL,22,57.87,1,44976.0,No
+11044,51,Mumbai,Month-to-month,None,14,54.1,0,29772.0,Yes
+11045,65,Lucknow,Month-to-month,DSL,30,50.14,4,37037.0,No
+11046,31,Mumbai,Two year,Fiber,18,39.49,0,33105.0,No
+11047,33,Bengaluru,Month-to-month,Fiber,23,52.06,2,80632.0,Yes
+11048,43,Delhi,Two year,None,34,30.24,1,30458.0,No
+11049,28,Mumbai,Two year,Fiber,16,72.52,2,34625.0,No
+11050,45,Lucknow,Month-to-month,DSL,15,29.26,1,54879.0,Yes
+11051,64,Mumbai,One year,DSL,42,109.42,2,74637.0,No
+11052,51,Kolkata,One year,DSL,15,101.41,0,24689.0,Yes
+11053,26,Surat,One year,Fiber,20,88.35,1,27004.0,No
+11054,28,Lucknow,Month-to-month,DSL,41,59.48,0,53775.0,No
+11055,22,Delhi,Month-to-month,DSL,17,51.22,1,57169.0,Yes
+11056,68,Lucknow,Month-to-month,DSL,14,90.92,2,29122.0,Yes
+11057,36,Hyderabad,Month-to-month,Fiber,58,68.03,0,22948.0,No
+11058,33,Bengaluru,Month-to-month,None,31,76.32,4,36381.0,Yes
+11059,63,Hyderabad,Two year,DSL,9,48.26,2,63707.0,No
+11060,34,Delhi,Two year,DSL,21,87.4,2,51055.0,No
+11061,30,Lucknow,Month-to-month,DSL,14,46.49,1,63663.0,Yes
+11062,31,Chennai,One year,Fiber,18,66.35,1,50024.0,No
+11063,39,Chennai,Month-to-month,Fiber,49,26.07,1,51203.0,Yes
+11064,21,Kochi,Month-to-month,DSL,5,49.62,5,61547.0,Yes
+11065,51,Delhi,Month-to-month,None,5,74.95,1,49824.0,Yes
+11066,40,Kolkata,Two year,None,30,54.09,1,55490.0,No
+11067,69,Surat,Month-to-month,None,13,54.16,2,37126.0,Yes
+11068,58,Indore,One year,Fiber,11,81.23,0,42108.0,Yes
+11069,38,Delhi,Two year,None,6,62.33,3,59200.0,No
+11070,55,Jaipur,Month-to-month,Fiber,49,91.14,3,47862.0,Yes
+11071,60,Pune,Two year,Fiber,45,18.0,1,39737.0,No
+11072,28,Delhi,Month-to-month,DSL,18,76.36,3,62214.0,Yes
+11073,26,Surat,One year,Fiber,13,75.01,1,60434.0,Yes
+11074,25,Pune,Two year,DSL,32,30.06,1,51572.0,No
+11075,20,Delhi,Two year,DSL,39,35.44,0,39542.0,No
+11076,35,Hyderabad,Two year,None,26,83.12,2,66030.0,No
+11077,60,Delhi,One year,None,19,40.49,1,91627.0,No
+11078,58,Mumbai,Two year,DSL,8,49.93,1,38524.0,No
+11079,38,Mumbai,Month-to-month,Fiber,23,76.97,2,27011.0,Yes
+11080,43,Mumbai,Month-to-month,Fiber,71,56.59,2,39194.0,No
+11081,58,Hyderabad,Month-to-month,Fiber,10,74.31,1,36733.0,Yes
+11082,66,Kochi,Month-to-month,Fiber,5,44.84,2,31431.0,Yes
+11083,32,Jaipur,Month-to-month,Fiber,18,70.36,1,,Yes
+11084,52,Jaipur,One year,None,41,87.56,2,65214.0,No
+11085,49,Kolkata,One year,None,43,70.97,2,65399.0,No
+11086,50,Pune,Month-to-month,Fiber,14,18.0,0,75330.0,Yes
+11087,60,Hyderabad,Two year,DSL,14,78.11,5,63584.0,No
+11088,58,Mumbai,Month-to-month,DSL,52,65.11,1,43997.0,No
+11089,38,Bengaluru,Month-to-month,Fiber,24,43.99,2,,Yes
+11090,57,Bengaluru,Two year,DSL,36,94.35,0,41845.0,No
+11091,20,Indore,Two year,None,19,25.63,1,46068.0,No
+11092,36,Pune,One year,None,34,104.89,0,32855.0,Yes
+11093,29,Chennai,Month-to-month,Fiber,22,49.97,1,71243.0,Yes
+11094,31,Kochi,Month-to-month,DSL,47,98.31,2,67780.0,No
+11095,65,Bengaluru,Two year,Fiber,11,62.85,1,44192.0,No
+11096,41,Hyderabad,Month-to-month,Fiber,7,34.68,1,46636.0,Yes
+11097,21,Bengaluru,Two year,Fiber,29,65.9,0,52166.0,No
+11098,43,Lucknow,One year,None,3,71.09,2,54811.0,Yes
+11099,21,Surat,Month-to-month,Fiber,29,75.68,0,65105.0,No
+11100,25,Hyderabad,Two year,Fiber,42,87.06,2,52650.0,Yes
+11101,38,Hyderabad,Month-to-month,None,29,44.16,1,57993.0,No
+11102,41,Jaipur,One year,Fiber,23,74.6,3,27582.0,Yes
+11103,30,Lucknow,One year,None,32,79.95,3,46754.0,Yes
+11104,51,Kochi,Month-to-month,Fiber,23,57.86,2,22889.0,Yes
+11105,44,Bengaluru,Month-to-month,Fiber,6,43.3,2,80090.0,Yes
+11106,25,Pune,One year,None,19,42.86,0,73884.0,No
+11107,61,Bengaluru,Month-to-month,Fiber,10,80.22,4,63010.0,Yes
+11108,25,Pune,Month-to-month,None,53,81.31,2,69332.0,No
+11109,37,Surat,Two year,DSL,34,45.64,5,,No
+11110,27,Chennai,Two year,DSL,19,34.47,2,66578.0,No
+11111,68,Kolkata,Month-to-month,Fiber,27,90.93,0,26077.0,Yes
+11112,33,Mumbai,Two year,DSL,17,29.77,2,48240.0,No
+11113,63,Kolkata,Month-to-month,DSL,51,67.28,5,15000.0,Yes
+11114,68,Kochi,Month-to-month,DSL,11,46.14,3,38505.0,Yes
+11115,29,Bengaluru,Two year,None,68,25.34,0,31628.0,No
+11116,19,Mumbai,Month-to-month,None,43,66.5,4,51387.0,Yes
+11117,18,Kolkata,One year,DSL,9,59.62,3,57747.0,Yes
+11118,27,Delhi,Two year,None,16,95.3,0,36664.0,No
+11119,39,Kochi,Month-to-month,DSL,25,113.53,4,46976.0,Yes
+11120,26,Pune,Month-to-month,None,30,59.66,2,55968.0,No
+11121,68,Jaipur,Two year,Fiber,42,86.23,0,48982.0,No
+11122,43,Surat,One year,Fiber,15,86.66,1,48629.0,Yes
+11123,62,Bengaluru,Two year,Fiber,10,52.31,1,15000.0,No
+11124,18,Surat,Month-to-month,Fiber,21,44.79,1,44419.0,Yes
+11125,25,Bengaluru,One year,DSL,11,99.04,2,64144.0,Yes
+11126,42,Lucknow,Two year,None,15,55.77,1,55594.0,No
+11127,26,Kochi,Month-to-month,DSL,8,63.21,2,27741.0,Yes
+11128,26,Hyderabad,Month-to-month,None,72,57.4,3,47094.0,No
+11129,19,Indore,Month-to-month,DSL,33,60.85,1,55708.0,Yes
+11130,32,Delhi,Month-to-month,DSL,20,50.54,0,35865.0,Yes
+11131,58,Kochi,Month-to-month,Fiber,34,80.16,2,62232.0,Yes
+11132,59,Hyderabad,Month-to-month,Fiber,21,91.27,3,38619.0,Yes
+11133,44,Lucknow,Month-to-month,None,13,55.6,2,46141.0,No
+11134,27,Chennai,One year,None,30,33.55,1,49689.0,No
+11135,41,,Month-to-month,None,7,64.88,1,87050.0,Yes
+11136,50,Bengaluru,One year,Fiber,12,31.2,2,46296.0,Yes
+11137,25,Chennai,Month-to-month,DSL,39,49.76,1,42288.0,Yes
+11138,39,Kochi,Month-to-month,DSL,23,90.71,2,62875.0,Yes
+11139,61,Chennai,One year,DSL,36,114.58,5,43884.0,Yes
+11140,40,Jaipur,Month-to-month,DSL,26,72.0,3,54512.0,Yes
+11141,42,Delhi,One year,Fiber,7,40.45,0,15363.0,No
+11142,61,Surat,Month-to-month,Fiber,15,80.84,4,56184.0,Yes
+11143,53,Kolkata,One year,Fiber,41,18.0,0,51105.0,No
+11144,26,Bengaluru,Two year,Fiber,19,48.56,1,30772.0,No
+11145,50,Kolkata,Month-to-month,Fiber,36,97.12,1,73120.0,No
+11146,66,Pune,Month-to-month,Fiber,22,80.08,1,47596.0,Yes
+11147,29,Jaipur,One year,DSL,8,33.55,1,48276.0,No
+11148,65,Kochi,Month-to-month,None,38,27.35,0,30387.0,No
+11149,49,Delhi,Two year,DSL,16,82.49,2,25403.0,No
+11150,53,Bengaluru,Month-to-month,Fiber,55,62.72,0,42314.0,Yes
+11151,35,Chennai,Month-to-month,None,19,50.77,1,27042.0,Yes
+11152,20,Delhi,One year,None,13,72.79,2,59248.0,No
+11153,19,Mumbai,Two year,None,15,51.2,4,65304.0,No
+11154,53,Surat,One year,Fiber,25,21.7,1,41243.0,No
+11155,70,Kochi,Two year,DSL,4,81.47,3,25653.0,No
+11156,49,Hyderabad,Month-to-month,Fiber,15,49.58,1,45090.0,Yes
+11157,36,Kolkata,Month-to-month,DSL,2,41.81,2,34426.0,Yes
+11158,58,Indore,One year,Fiber,38,34.57,1,54057.0,No
+11159,68,Pune,Two year,Fiber,22,69.24,0,54262.0,No
+11160,29,Hyderabad,One year,None,38,46.15,2,44563.0,Yes
+11161,23,Indore,One year,None,58,77.43,0,52553.0,No
+11162,68,Indore,Month-to-month,DSL,13,57.91,0,68026.0,No
+11163,20,Jaipur,One year,DSL,39,87.43,1,78631.0,No
+11164,64,Lucknow,One year,DSL,10,55.31,0,43023.0,No
+11165,25,Kolkata,Two year,DSL,3,49.46,1,62924.0,No
+11166,24,Bengaluru,Two year,Fiber,29,20.66,3,47563.0,No
+11167,32,Mumbai,One year,Fiber,11,39.72,0,34447.0,Yes
+11168,34,Chennai,Two year,Fiber,62,79.54,2,71868.0,No
+11169,35,Pune,Month-to-month,DSL,33,120.0,4,57639.0,Yes
+11170,19,Jaipur,One year,Fiber,3,36.37,0,53604.0,Yes
+11171,63,Surat,Month-to-month,Fiber,21,41.06,1,57026.0,No
+11172,62,Hyderabad,One year,Fiber,13,71.17,0,48750.0,No
+11173,54,Delhi,Month-to-month,None,35,74.22,0,34504.0,Yes
+11174,66,Bengaluru,Month-to-month,DSL,17,48.96,1,79753.0,No
+11175,67,Surat,Two year,Fiber,45,65.5,1,65738.0,No
+11176,70,Kochi,Month-to-month,Fiber,32,28.59,1,55556.0,Yes
+11177,37,Mumbai,Month-to-month,DSL,72,57.26,3,66789.0,No
+11178,50,Hyderabad,Month-to-month,None,29,83.5,4,71911.0,Yes
+11179,58,Bengaluru,Two year,Fiber,13,99.55,3,48145.0,Yes
+11180,53,Bengaluru,Month-to-month,DSL,20,60.12,1,60733.0,Yes
+11181,59,Mumbai,Two year,DSL,11,58.11,3,46151.0,Yes
+11182,53,Indore,Month-to-month,Fiber,8,73.69,0,61651.0,Yes
+11183,38,Lucknow,Month-to-month,DSL,24,88.02,0,47271.0,Yes
+11184,48,Lucknow,One year,DSL,30,74.45,0,90282.0,No
+11185,28,Lucknow,One year,DSL,16,47.36,0,45624.0,No
+11186,68,Lucknow,Two year,Fiber,21,71.6,1,59589.0,No
+11187,65,Delhi,Two year,DSL,9,84.98,2,58747.0,No
+11188,50,Bengaluru,Month-to-month,Fiber,12,48.2,3,45981.0,Yes
+11189,58,Chennai,One year,Fiber,14,34.56,4,66316.0,Yes
+11190,35,Surat,One year,Fiber,4,74.95,3,50000.0,Yes
+11191,38,Lucknow,Month-to-month,DSL,13,71.82,2,44745.0,Yes
+11192,45,Kolkata,One year,DSL,8,84.96,1,51359.0,Yes
+11193,31,Delhi,Two year,Fiber,15,65.75,2,39323.0,No
+11194,18,Bengaluru,Month-to-month,DSL,3,49.71,1,70479.0,Yes
+11195,38,Jaipur,Two year,Fiber,27,54.25,3,61336.0,No
+11196,56,Mumbai,Month-to-month,Fiber,45,41.31,1,67046.0,No
+11197,31,Chennai,Month-to-month,None,18,43.11,0,29721.0,Yes
+11198,54,Lucknow,One year,DSL,27,51.55,0,55667.0,No
+11199,49,Lucknow,Month-to-month,Fiber,21,53.26,3,39034.0,Yes
+11200,40,Kochi,One year,DSL,33,88.23,3,52716.0,Yes
+11201,56,Surat,Month-to-month,None,20,37.0,1,71717.0,No
+11202,63,Surat,Month-to-month,None,5,62.81,3,55445.0,Yes
+11203,68,Bengaluru,One year,Fiber,58,50.97,0,48525.0,Yes
+11204,58,Mumbai,One year,DSL,5,96.43,0,69254.0,No
+11205,22,Surat,Month-to-month,Fiber,29,69.61,4,67507.0,Yes
+11206,35,Chennai,Month-to-month,Fiber,34,55.71,0,80907.0,Yes
+11207,45,Pune,Two year,Fiber,6,81.72,1,21566.0,No
+11208,22,Indore,Two year,Fiber,14,65.36,0,56573.0,No
+11209,40,Kochi,Two year,None,15,53.49,3,44673.0,No
+11210,25,Bengaluru,Month-to-month,DSL,21,97.5,4,37345.0,Yes
+11211,47,Kolkata,Month-to-month,Fiber,33,79.47,1,53179.0,Yes
+11212,27,Bengaluru,Month-to-month,DSL,6,101.76,2,32737.0,Yes
+11213,32,Kochi,Month-to-month,DSL,17,89.24,2,15602.0,Yes
+11214,34,Mumbai,Month-to-month,Fiber,36,80.9,4,36898.0,Yes
+11215,69,Bengaluru,Month-to-month,DSL,38,66.84,1,47158.0,No
+11216,41,Kolkata,Month-to-month,DSL,39,40.22,0,81200.0,No
+11217,47,Surat,Month-to-month,DSL,34,79.48,3,39795.0,Yes
+11218,67,Delhi,Month-to-month,DSL,17,65.55,4,32640.0,Yes
+11219,18,Hyderabad,Month-to-month,None,8,78.75,1,19699.0,Yes
+11220,32,Chennai,One year,None,41,63.8,0,45712.0,No
+11221,40,Pune,One year,DSL,18,48.9,4,47497.0,No
+11222,65,Surat,Two year,None,33,41.99,2,53710.0,No
+11223,56,Bengaluru,Two year,None,9,79.3,0,28203.0,No
+11224,54,Mumbai,One year,Fiber,5,92.27,0,39145.0,Yes
+11225,38,Kolkata,Two year,Fiber,26,57.72,0,15061.0,No
+11226,63,Hyderabad,Month-to-month,DSL,53,73.96,2,54028.0,No
+11227,27,Bengaluru,One year,DSL,13,94.29,1,26231.0,No
+11228,39,Delhi,Month-to-month,Fiber,7,45.78,3,15000.0,Yes
+11229,36,Mumbai,Month-to-month,Fiber,28,56.6,1,69903.0,Yes
+11230,18,Lucknow,Two year,DSL,26,39.57,3,59423.0,No
+11231,22,Surat,One year,DSL,13,89.83,4,56961.0,Yes
+11232,59,Lucknow,Month-to-month,DSL,6,69.79,0,,Yes
+11233,68,,One year,DSL,51,53.97,2,34776.0,Yes
+11234,31,Surat,Month-to-month,DSL,14,27.87,2,68519.0,Yes
+11235,22,Kochi,Two year,Fiber,48,60.14,2,34572.0,No
+11236,25,Pune,Month-to-month,Fiber,5,85.89,2,81928.0,Yes
+11237,21,Kochi,Month-to-month,DSL,24,57.62,1,54958.0,Yes
+11238,60,Lucknow,Month-to-month,Fiber,10,54.81,2,21835.0,Yes
+11239,20,Bengaluru,Month-to-month,None,16,78.1,0,65248.0,Yes
+11240,54,Lucknow,Two year,None,27,37.16,2,82917.0,No
+11241,60,Jaipur,Month-to-month,DSL,16,65.25,2,47275.0,Yes
+11242,29,Indore,Month-to-month,None,32,77.18,0,68411.0,No
+11243,30,Chennai,One year,Fiber,24,47.08,2,47959.0,No
+11244,32,Mumbai,One year,DSL,11,46.0,2,41308.0,No
+11245,58,Jaipur,One year,None,7,69.54,0,15000.0,No
+11246,67,Pune,Month-to-month,Fiber,9,61.96,2,71137.0,Yes
+11247,58,Jaipur,Month-to-month,DSL,35,58.98,1,44235.0,Yes
+11248,32,Jaipur,Two year,Fiber,8,68.67,0,57440.0,No
+11249,55,Jaipur,Month-to-month,Fiber,3,69.0,2,33220.0,Yes
+11250,55,Bengaluru,Month-to-month,Fiber,33,43.93,5,36822.0,Yes
+11251,40,Lucknow,Month-to-month,DSL,39,49.59,2,69245.0,Yes
+11252,24,Lucknow,Month-to-month,None,7,73.96,2,45184.0,Yes
+11253,34,Bengaluru,Two year,Fiber,30,88.66,0,44949.0,No
+11254,61,Jaipur,One year,Fiber,12,93.74,0,31199.0,Yes
+11255,45,Delhi,One year,DSL,8,45.68,3,54733.0,Yes
+11256,24,Lucknow,Month-to-month,DSL,28,88.08,1,63840.0,No
+11257,66,Hyderabad,One year,DSL,8,80.75,1,44007.0,Yes
+11258,45,Kochi,One year,DSL,30,63.54,2,48379.0,No
+11259,36,Lucknow,Month-to-month,DSL,18,74.86,2,31842.0,Yes
+11260,19,Pune,Month-to-month,Fiber,7,82.32,2,73842.0,Yes
+11261,48,Hyderabad,Month-to-month,Fiber,37,103.24,3,41486.0,Yes
+11262,47,Mumbai,One year,DSL,11,41.19,3,48903.0,No
+11263,26,Mumbai,One year,Fiber,15,77.35,2,78372.0,Yes
+11264,62,Delhi,One year,DSL,29,61.19,4,47771.0,Yes
+11265,44,Chennai,Month-to-month,DSL,42,59.73,1,26537.0,No
+11266,22,Pune,Two year,DSL,13,89.28,4,36565.0,No
+11267,28,Mumbai,Month-to-month,None,20,82.11,2,45661.0,Yes
+11268,32,Surat,Two year,Fiber,9,42.11,1,79995.0,No
+11269,57,Delhi,One year,Fiber,5,58.09,3,55011.0,No
+11270,58,Delhi,Month-to-month,None,25,69.23,2,47823.0,Yes
+11271,61,Lucknow,Two year,DSL,29,33.46,1,64734.0,No
+11272,50,Lucknow,One year,Fiber,44,83.12,1,72369.0,No
+11273,66,Hyderabad,One year,DSL,17,62.65,3,39276.0,No
+11274,34,Bengaluru,Month-to-month,DSL,63,67.83,0,74470.0,No
+11275,48,Delhi,One year,Fiber,10,71.61,3,65249.0,No
+11276,51,Jaipur,Month-to-month,Fiber,12,103.69,0,58680.0,Yes
+11277,37,Lucknow,Month-to-month,DSL,24,65.1,2,15000.0,Yes
+11278,42,Indore,Month-to-month,DSL,4,56.52,2,54633.0,Yes
+11279,55,Chennai,Month-to-month,Fiber,28,102.21,2,73887.0,Yes
+11280,63,Pune,Month-to-month,Fiber,18,53.38,3,47093.0,No
+11281,66,Hyderabad,One year,Fiber,21,52.88,0,88630.0,No
+11282,33,Delhi,Month-to-month,Fiber,5,34.1,0,52690.0,Yes
+11283,56,Kochi,Month-to-month,Fiber,15,87.87,0,35164.0,Yes
+11284,58,Bengaluru,Two year,Fiber,27,70.25,1,61060.0,No
+11285,67,Hyderabad,Month-to-month,Fiber,30,74.59,0,56256.0,Yes
+11286,51,Kochi,Month-to-month,Fiber,21,67.95,1,64934.0,Yes
+11287,28,Chennai,Month-to-month,Fiber,32,61.39,0,47959.0,Yes
+11288,57,Kochi,Month-to-month,Fiber,70,47.24,1,72509.0,No
+11289,27,Indore,Month-to-month,Fiber,18,47.34,1,42601.0,Yes
+11290,38,Jaipur,One year,Fiber,7,73.75,0,53674.0,Yes
+11291,43,Delhi,Month-to-month,None,71,67.04,0,31477.0,No
+11292,56,Delhi,Two year,DSL,10,99.87,5,38682.0,Yes
+11293,26,Jaipur,Two year,Fiber,44,47.81,2,54842.0,No
+11294,55,Lucknow,One year,Fiber,27,53.76,3,40991.0,No
+11295,25,Surat,Month-to-month,DSL,10,42.15,5,44327.0,Yes
+11296,38,Indore,Month-to-month,Fiber,34,94.37,2,48250.0,Yes
+11297,24,Hyderabad,Month-to-month,DSL,62,37.54,3,55664.0,No
+11298,19,Pune,Month-to-month,Fiber,2,81.17,3,63945.0,Yes
+11299,35,Pune,Two year,None,25,95.68,1,63979.0,No
+11300,69,Bengaluru,Month-to-month,Fiber,22,61.33,0,68110.0,Yes
+11301,47,Mumbai,One year,DSL,52,80.16,2,54909.0,No
+11302,55,Jaipur,One year,Fiber,33,18.09,1,42810.0,No
+11303,30,Mumbai,Month-to-month,Fiber,8,55.98,2,26013.0,Yes
+11304,28,Lucknow,Month-to-month,Fiber,2,28.31,4,46000.0,Yes
+11305,66,Mumbai,One year,None,28,68.13,2,38762.0,No
+11306,56,Pune,One year,None,34,64.59,0,22295.0,No
+11307,43,Kochi,Month-to-month,DSL,15,47.67,1,78237.0,No
+11308,32,Kolkata,Two year,DSL,18,84.96,4,21910.0,No
+11309,63,Hyderabad,Month-to-month,DSL,8,72.14,2,57376.0,Yes
+11310,42,Kochi,Month-to-month,Fiber,32,53.03,5,60606.0,Yes
+11311,20,Hyderabad,Month-to-month,None,21,53.26,1,47843.0,No
+11312,63,Surat,One year,Fiber,33,32.44,0,93452.0,No
+11313,40,Hyderabad,Month-to-month,None,16,60.38,2,51970.0,Yes
+11314,41,Chennai,Month-to-month,Fiber,11,110.52,0,39245.0,Yes
+11315,38,Jaipur,One year,DSL,12,48.96,1,80119.0,No
+11316,33,Kochi,Month-to-month,DSL,61,73.58,3,38695.0,Yes
+11317,49,Jaipur,One year,DSL,44,52.5,3,28413.0,No
+11318,34,Chennai,One year,Fiber,39,81.91,2,35369.0,No
+11319,44,Mumbai,One year,Fiber,45,74.0,3,41248.0,No
+11320,22,Bengaluru,Month-to-month,None,18,59.36,1,52379.0,No
+11321,62,Mumbai,One year,Fiber,20,25.66,4,57105.0,Yes
+11322,29,Kochi,Month-to-month,Fiber,6,53.26,1,27004.0,Yes
+11323,50,Indore,Month-to-month,DSL,32,90.54,0,57309.0,Yes
+11324,32,Delhi,Month-to-month,None,43,59.14,2,87815.0,No
+11325,27,Surat,Month-to-month,Fiber,15,78.12,0,40068.0,Yes
+11326,27,Jaipur,Month-to-month,Fiber,60,54.0,0,49506.0,No
+11327,55,Jaipur,One year,Fiber,9,23.86,2,62916.0,No
+11328,21,Lucknow,One year,None,19,73.72,2,71174.0,No
+11329,60,Hyderabad,Month-to-month,Fiber,23,71.41,1,40814.0,Yes
+11330,42,Kochi,Month-to-month,DSL,42,51.87,2,36039.0,No
+11331,42,Jaipur,Month-to-month,Fiber,45,56.4,1,35283.0,Yes
+11332,29,Lucknow,Month-to-month,Fiber,11,70.76,2,69425.0,Yes
+11333,36,Delhi,One year,DSL,37,51.57,1,66244.0,No
+11334,57,Jaipur,Two year,DSL,72,71.98,0,16527.0,No
+11335,65,Lucknow,Month-to-month,DSL,13,60.04,3,16933.0,Yes
+11336,66,Kolkata,Two year,Fiber,34,18.0,3,31566.0,No
+11337,50,Hyderabad,Two year,Fiber,18,61.33,1,27299.0,No
+11338,32,Surat,Month-to-month,Fiber,36,51.49,2,58285.0,No
+11339,22,Indore,One year,DSL,17,46.27,2,55208.0,No
+11340,48,Hyderabad,Two year,Fiber,37,73.23,2,83444.0,No
+11341,47,Surat,One year,Fiber,11,53.86,2,64535.0,Yes
+11342,44,Delhi,Month-to-month,None,24,76.22,1,53625.0,Yes
+11343,45,Mumbai,One year,Fiber,32,88.26,4,70805.0,Yes
+11344,21,Pune,Two year,Fiber,21,67.6,1,37160.0,No
+11345,38,Surat,Month-to-month,DSL,13,30.83,0,28953.0,Yes
+11346,24,Jaipur,Month-to-month,Fiber,55,48.59,5,52180.0,Yes
+11347,63,Kochi,Month-to-month,DSL,16,84.35,3,66893.0,Yes
+11348,64,Hyderabad,Two year,Fiber,41,58.88,1,25350.0,No
+11349,61,Chennai,One year,DSL,17,46.96,1,66177.0,No
+11350,43,Surat,Month-to-month,Fiber,28,62.55,1,65603.0,Yes
+11351,60,Pune,One year,Fiber,26,75.46,1,43512.0,No
+11352,60,,One year,DSL,16,70.15,0,54396.0,No
+11353,36,Chennai,Month-to-month,DSL,21,78.56,0,47199.0,No
+11354,21,Delhi,Month-to-month,DSL,7,46.59,1,52967.0,Yes
+11355,62,Indore,One year,None,18,58.55,1,64765.0,No
+11356,49,Kolkata,Month-to-month,DSL,19,59.05,0,38597.0,Yes
+11357,41,Kochi,Month-to-month,DSL,21,64.06,0,68543.0,Yes
+11358,63,Delhi,Two year,DSL,11,18.97,5,65788.0,Yes
+11359,68,Mumbai,One year,DSL,12,59.4,3,66390.0,No
+11360,63,Jaipur,Month-to-month,DSL,4,35.37,6,19641.0,Yes
+11361,18,Kochi,Month-to-month,None,40,94.77,1,21393.0,Yes
+11362,18,Bengaluru,Month-to-month,DSL,13,98.39,1,62893.0,Yes
+11363,43,Lucknow,Two year,Fiber,9,101.11,1,42119.0,No
+11364,45,Hyderabad,One year,DSL,2,82.17,2,40422.0,Yes
+11365,30,Kochi,Two year,DSL,13,54.0,0,39222.0,No
+11366,37,Kochi,One year,DSL,37,85.43,4,29833.0,Yes
+11367,47,Kochi,One year,DSL,56,60.21,1,46984.0,No
+11368,58,Kochi,Month-to-month,Fiber,3,77.87,2,39901.0,Yes
+11369,58,Kochi,One year,Fiber,54,44.96,1,40986.0,No
+11370,21,Chennai,Month-to-month,None,13,51.81,2,59423.0,No
+11371,38,Indore,Month-to-month,Fiber,9,74.7,2,32425.0,Yes
+11372,32,Kolkata,Month-to-month,Fiber,20,103.14,4,69921.0,Yes
+11373,33,Delhi,One year,Fiber,18,64.05,1,15504.0,No
+11374,61,Kolkata,Month-to-month,None,37,113.61,0,92404.0,No
+11375,40,Lucknow,Month-to-month,Fiber,18,120.0,0,29524.0,Yes
+11376,42,Hyderabad,Month-to-month,None,17,36.73,0,61119.0,Yes
+11377,69,Kochi,Month-to-month,Fiber,21,64.02,0,66482.0,Yes
+11378,42,Hyderabad,Two year,Fiber,30,43.91,0,51573.0,No
+11379,57,Hyderabad,One year,None,46,61.59,1,63744.0,No
+11380,69,Jaipur,One year,Fiber,22,53.0,2,49876.0,Yes
+11381,69,Hyderabad,Month-to-month,None,31,63.17,3,22973.0,Yes
+11382,34,Lucknow,Month-to-month,Fiber,38,85.61,2,,Yes
+11383,39,Kochi,Month-to-month,Fiber,32,85.06,3,70255.0,Yes
+11384,20,Lucknow,Two year,None,23,70.29,2,42659.0,No
+11385,57,Hyderabad,Month-to-month,Fiber,11,64.7,2,24007.0,Yes
+11386,38,Indore,One year,DSL,14,67.22,3,41830.0,Yes
+11387,18,Surat,Month-to-month,DSL,12,67.41,0,56926.0,Yes
+11388,26,Kolkata,Month-to-month,Fiber,54,77.13,1,56549.0,No
+11389,27,Bengaluru,One year,Fiber,5,64.77,1,69627.0,Yes
+11390,22,Bengaluru,Month-to-month,DSL,41,75.59,2,60716.0,Yes
+11391,21,Surat,Month-to-month,Fiber,43,36.18,1,59891.0,Yes
+11392,48,Kochi,Month-to-month,Fiber,28,81.91,2,19032.0,Yes
+11393,30,Indore,One year,Fiber,14,102.67,3,87925.0,Yes
+11394,68,Mumbai,Month-to-month,None,22,68.66,3,52437.0,Yes
+11395,48,Lucknow,One year,Fiber,28,33.92,3,65691.0,No
+11396,48,Chennai,Month-to-month,DSL,22,94.06,1,,Yes
+11397,45,Kochi,One year,DSL,5,57.51,3,49167.0,No
+11398,52,Mumbai,Month-to-month,Fiber,11,18.0,1,52614.0,Yes
+11399,59,Bengaluru,Month-to-month,DSL,17,59.93,2,77315.0,No
+11400,35,Chennai,Two year,DSL,11,77.86,2,76366.0,No
+11401,50,Jaipur,One year,None,26,73.04,3,61731.0,Yes
+11402,48,Pune,One year,Fiber,21,91.68,3,84022.0,Yes
+11403,54,Bengaluru,Month-to-month,Fiber,59,78.2,4,45230.0,Yes
+11404,57,Hyderabad,Two year,Fiber,16,67.41,0,60120.0,No
+11405,58,Surat,Month-to-month,DSL,18,21.71,1,44249.0,Yes
+11406,49,Surat,Two year,Fiber,55,40.46,0,72811.0,No
+11407,21,Jaipur,Two year,Fiber,37,68.61,4,52293.0,No
+11408,60,Indore,One year,DSL,10,79.44,1,67661.0,No
+11409,69,Surat,Two year,DSL,34,42.35,0,79831.0,No
+11410,47,Lucknow,Month-to-month,DSL,11,51.39,4,17903.0,Yes
+11411,41,Chennai,One year,DSL,28,74.94,2,87146.0,No
+11412,28,Kochi,Month-to-month,Fiber,72,23.15,0,56936.0,No
+11413,42,Kolkata,Two year,DSL,18,22.35,4,46530.0,No
+11414,48,Delhi,Two year,Fiber,38,59.71,0,20459.0,Yes
+11415,59,Kolkata,Month-to-month,DSL,31,70.2,2,46807.0,Yes
+11416,44,Mumbai,Month-to-month,None,53,54.29,0,15000.0,No
+11417,27,Kochi,One year,Fiber,15,18.0,4,53199.0,Yes
+11418,26,Lucknow,One year,None,23,65.22,1,48983.0,No
+11419,46,Jaipur,Month-to-month,DSL,33,35.8,2,81565.0,No
+11420,50,Lucknow,Two year,DSL,17,78.96,1,46426.0,No
+11421,64,Hyderabad,Month-to-month,DSL,14,62.52,0,69306.0,Yes
+11422,61,Chennai,Two year,DSL,26,70.48,2,70845.0,No
+11423,48,Bengaluru,One year,Fiber,36,78.69,2,85526.0,No
+11424,25,Hyderabad,Month-to-month,DSL,31,53.26,1,47739.0,No
+11425,61,Delhi,Month-to-month,None,12,82.74,2,64243.0,No
+11426,46,Bengaluru,Month-to-month,DSL,25,91.8,2,26941.0,Yes
+11427,62,Surat,Month-to-month,DSL,23,73.37,4,33660.0,Yes
+11428,56,Kolkata,One year,None,48,93.68,2,47337.0,No
+11429,34,Indore,One year,None,13,51.09,3,51434.0,No
+11430,39,Pune,Two year,Fiber,17,84.68,1,31929.0,No
+11431,39,Delhi,Month-to-month,DSL,56,70.59,2,45073.0,No
+11432,32,Pune,Two year,Fiber,18,43.25,1,63306.0,No
+11433,58,Surat,Month-to-month,Fiber,11,63.03,2,44360.0,Yes
+11434,37,Jaipur,Two year,DSL,16,53.2,0,49305.0,No
+11435,54,Hyderabad,Two year,DSL,15,52.71,0,37263.0,No
+11436,46,Lucknow,Month-to-month,DSL,15,66.63,3,74489.0,Yes
+11437,39,Kochi,Two year,Fiber,53,87.87,0,81012.0,No
+11438,54,Indore,One year,DSL,13,57.83,3,55218.0,Yes
+11439,27,Indore,One year,DSL,7,67.46,1,49988.0,Yes
+11440,47,Pune,Two year,DSL,47,32.77,1,79163.0,No
+11441,25,Lucknow,Month-to-month,None,25,67.07,4,59721.0,Yes
+11442,23,Hyderabad,Month-to-month,Fiber,30,89.88,0,40898.0,No
+11443,61,Pune,Month-to-month,DSL,25,82.39,0,29767.0,Yes
+11444,61,Indore,Two year,DSL,29,75.09,2,42221.0,No
+11445,53,Indore,Two year,Fiber,33,53.28,2,87881.0,No
+11446,66,Chennai,Month-to-month,None,26,43.52,2,42161.0,Yes
+11447,50,Surat,One year,DSL,6,62.71,1,99282.0,No
+11448,23,Lucknow,Month-to-month,DSL,22,35.6,0,51863.0,No
+11449,38,Surat,Month-to-month,None,10,37.87,3,48354.0,Yes
+11450,31,Chennai,Month-to-month,DSL,26,85.28,4,73607.0,Yes
+11451,56,Indore,One year,DSL,23,44.77,1,47882.0,No
+11452,27,Bengaluru,Month-to-month,DSL,50,103.87,0,58125.0,Yes
+11453,49,Kochi,Month-to-month,DSL,11,33.62,0,34852.0,No
+11454,63,Surat,Month-to-month,DSL,10,74.12,3,31494.0,Yes
+11455,27,Mumbai,Month-to-month,Fiber,10,39.23,2,39810.0,Yes
+11456,66,Bengaluru,One year,Fiber,31,68.55,0,55574.0,No
+11457,55,Lucknow,Month-to-month,None,9,42.09,1,41018.0,No
+11458,20,Chennai,Month-to-month,DSL,10,65.64,0,19702.0,Yes
+11459,46,Kolkata,One year,Fiber,33,61.35,0,59742.0,No
+11460,35,Mumbai,Month-to-month,None,8,54.91,0,49226.0,Yes
+11461,55,Delhi,Month-to-month,DSL,6,75.9,3,47345.0,Yes
+11462,28,Surat,Two year,DSL,10,97.63,2,41872.0,No
+11463,44,Lucknow,Two year,DSL,23,51.87,0,15000.0,No
+11464,42,Hyderabad,Two year,None,7,84.02,2,78026.0,No
+11465,44,Hyderabad,Month-to-month,Fiber,21,66.59,1,44058.0,Yes
+11466,66,Hyderabad,One year,Fiber,12,64.09,1,60597.0,Yes
+11467,67,Lucknow,Month-to-month,DSL,37,112.53,5,74809.0,Yes
+11468,21,Indore,Month-to-month,Fiber,18,18.0,4,70486.0,Yes
+11469,59,Pune,Month-to-month,DSL,60,49.91,0,55275.0,No
+11470,27,Indore,Two year,DSL,19,25.3,3,52106.0,No
+11471,26,Kochi,Two year,DSL,11,57.92,1,56986.0,No
+11472,43,Delhi,Month-to-month,DSL,22,59.75,0,66850.0,Yes
+11473,69,Bengaluru,Month-to-month,Fiber,18,120.0,3,61468.0,Yes
+11474,45,Mumbai,Two year,Fiber,14,72.29,1,44623.0,No
+11475,49,Jaipur,Two year,DSL,72,103.87,0,59354.0,No
+11476,57,Indore,Month-to-month,Fiber,46,93.04,0,58168.0,Yes
+11477,43,Indore,Month-to-month,DSL,40,55.15,0,63375.0,Yes
+11478,41,Hyderabad,Month-to-month,Fiber,41,75.19,1,55334.0,No
+11479,54,Delhi,One year,None,10,101.12,3,74464.0,Yes
+11480,25,Pune,Month-to-month,DSL,14,68.52,1,55277.0,Yes
+11481,64,Kolkata,Month-to-month,DSL,8,69.3,3,66562.0,Yes
+11482,36,Mumbai,Month-to-month,None,41,75.7,3,52690.0,Yes
+11483,49,Bengaluru,Month-to-month,Fiber,60,31.96,1,42543.0,Yes
+11484,70,Hyderabad,Month-to-month,DSL,16,47.04,0,36440.0,Yes
+11485,58,Jaipur,Month-to-month,DSL,20,72.08,0,49364.0,No
+11486,57,Indore,Two year,Fiber,16,76.63,2,60775.0,Yes
+11487,61,Pune,Month-to-month,Fiber,27,44.71,3,72791.0,Yes
+11488,24,Indore,One year,DSL,23,57.69,0,50505.0,No
+11489,41,Chennai,One year,Fiber,26,62.06,1,43443.0,No
+11490,60,Delhi,Month-to-month,None,29,61.43,0,43634.0,Yes
+11491,31,Mumbai,One year,DSL,23,79.84,0,73168.0,No
+11492,34,Jaipur,Month-to-month,DSL,18,67.04,0,53721.0,No
+11493,64,Mumbai,One year,Fiber,46,68.34,1,43764.0,No
+11494,59,Mumbai,One year,None,28,33.87,1,64132.0,No
+11495,31,Hyderabad,One year,Fiber,12,41.75,2,30297.0,No
+11496,18,Kolkata,Month-to-month,Fiber,50,71.72,1,53896.0,Yes
+11497,43,Hyderabad,Two year,Fiber,20,29.94,3,51279.0,No
+11498,64,Lucknow,Two year,Fiber,37,70.58,1,49780.0,No
+11499,46,Indore,One year,DSL,20,50.28,2,,No
+11500,26,Bengaluru,One year,Fiber,58,46.98,2,68098.0,No
+10092,57,Bengaluru,Month-to-month,Fiber,15,34.66,2,46089.0,Yes
+10076,18,Mumbai,Two year,DSL,16,102.5,1,55963.0,No
+11265,44,Chennai,Month-to-month,DSL,42,59.73,1,26537.0,No
+10331,66,Kochi,Two year,DSL,13,82.13,2,31363.0,No
+11350,43,Surat,Month-to-month,Fiber,28,62.55,1,65603.0,Yes
+10775,23,Hyderabad,Two year,Fiber,10,45.64,0,75407.0,No
+11039,37,Kochi,Month-to-month,Fiber,9,53.97,3,44259.0,Yes

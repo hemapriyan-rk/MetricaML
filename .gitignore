@@ -1,0 +1,19 @@
+# runtime data (uploads, experiment artifacts, SQLite database)
+data/
+*.log
+
+# python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# node
+frontend/node_modules/
+frontend/dist/
+
+.env
+
+# SSH keys / secrets
+*.pem
+*.key
