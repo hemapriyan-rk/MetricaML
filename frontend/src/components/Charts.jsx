@@ -167,3 +167,32 @@ export function PerClassTable({ rows }) {
     </div>
   )
 }
+
+export function Leaderboard({ comparison }) {
+  const isAcc = comparison.metric === 'accuracy'
+  const ok = comparison.entries.filter((e) => e.status === 'ok')
+  const rest = comparison.entries.filter((e) => e.status !== 'ok')
+  const fmt = (v) => (isAcc ? `${(v * 100).toFixed(1)}%` : v.toFixed(3))
+  return (
+    <div>
+      <ol className="leader">
+        {ok.map((e, i) => (
+          <li key={e.key} className={i === 0 ? 'winner' : ''}>
+            <span className="rank">{i + 1}</span>
+            <span className="leader-name"><strong>{e.label}</strong><span className="muted">{e.family}</span></span>
+            <span className="bar-track"><span className={`bar-fill ${i === 0 ? '' : 'dim'}`} style={{ width: `${Math.max(Math.min(e.score, 1), 0) * 100}%` }} /></span>
+            <span className="leader-score">{fmt(e.score)}</span>
+            <span className="muted leader-time">{e.seconds.toFixed(1)} s</span>
+          </li>
+        ))}
+        {rest.map((e) => (
+          <li key={e.key} className="skipped">
+            <span className="rank">–</span>
+            <span className="leader-name"><strong>{e.label}</strong><span className="muted">{e.note}</span></span>
+          </li>
+        ))}
+      </ol>
+      <p className="muted small">Ranked by {isAcc ? 'accuracy' : 'R²'} on a validation slice of {comparison.rows_used.toLocaleString('en')} training rows, with default settings. The winner was then retrained on all training rows and measured on the held-out test rows below.</p>
+    </div>
+  )
+}

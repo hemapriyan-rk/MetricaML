@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api } from '../api'
 import { Alert, Icon } from '../components/bits'
-import { ClassBars, ConfusionMatrix, Histogram, ImportanceBars, PerClassTable, Scatter } from '../components/Charts'
+import { ClassBars, ConfusionMatrix, Histogram, ImportanceBars, Leaderboard, PerClassTable, Scatter } from '../components/Charts'
 import HostPanel from '../components/HostPanel'
 import Ruler from '../components/Ruler'
 import { bytes, num, pct, seconds, slug, when } from '../format'
@@ -24,7 +24,7 @@ export default function Results({ exp }) {
       <header className="page-head">
         <div>
           <p className="crumb"><Link to="/experiments">My experiments</Link></p>
-          <h1>Experiment #{exp.id}: {r.algorithm.label}</h1>
+          <h1>Experiment #{exp.id}: {r.display_label}</h1>
           <p className="lede">
             Predicting <b>{r.target}</b> in {r.dataset.filename}. Finished {when(exp.finished_at)} in {seconds(exp.duration_s)}
             {r.host.instance_type ? ` on ${r.host.provider} ${r.host.instance_type}` : ` on ${r.host.provider.toLowerCase()}`}.
@@ -39,13 +39,18 @@ export default function Results({ exp }) {
       {isClass ? <ClassificationHero r={r} /> : <RegressionHero r={r} />}
 
       <div className="blocks">
+        {r.comparison && (
+          <Block title="Algorithm comparison" help={`${r.comparison.entries.filter((e) => e.status === 'ok').length} algorithms were trained and ranked. ${r.algorithm.label} won, so it is the model measured above and saved for download.`}>
+            <Leaderboard comparison={r.comparison} />
+          </Block>
+        )}
         {isClass ? (
           <>
             <Block title="Confusion matrix" help={`Each row is what a ${r.target} really was; each column is what the model said. Blue cells are correct predictions; amber cells are mistakes.`}>
               <ConfusionMatrix labels={r.charts.confusion.labels} matrix={r.charts.confusion.matrix} />
             </Block>
             <Block title="Feature importance" help="How much the score drops when one feature's values are shuffled. A bigger drop means the model leans on that feature more.">
-              <ImportanceBars items={r.charts.importance} />
+              <Importance r={r} />
             </Block>
             <Block title="Class distribution" help="How many held-out rows belong to each class, next to how many the model assigned to it. Similar bars mean the model isn't favouring a class.">
               <ClassBars {...r.charts.class_distribution} />
@@ -63,7 +68,7 @@ export default function Results({ exp }) {
               <Histogram edges={r.charts.residuals.edges} counts={r.charts.residuals.counts} xLabel={r.target} />
             </Block>
             <Block title="Feature importance" help="How much R² drops when one feature's values are shuffled. A bigger drop means the model leans on that feature more.">
-              <ImportanceBars items={r.charts.importance} />
+              <Importance r={r} />
             </Block>
           </>
         )}
@@ -220,4 +225,11 @@ function RunRecord({ r }) {
       </ul>
     </div>
   )
+}
+
+function Importance({ r }) {
+  if (r.charts.importance.length === 0) {
+    return <p className="muted">Skipped for this run so the model could finish inside the time limit. Try fewer rows or a lighter algorithm to see it.</p>
+  }
+  return <ImportanceBars items={r.charts.importance} />
 }

@@ -217,3 +217,34 @@ def test_delete_experiment(client):
     assert client.delete(f"/api/experiments/{exp['id']}").status_code == 200
     assert client.get(f"/api/experiments/{exp['id']}").status_code == 404
     assert not (config.EXPERIMENT_DIR / str(exp["id"])).exists()
+
+
+def test_compare_all_algorithms(client):
+    ds = use_sample(client, "iris.txt")
+    exp = wait_for(client, run(client, ds, algorithm="auto_compare").json()["id"], timeout=150)
+    assert exp["status"] == "completed", exp.get("error")
+    cmp = exp["results"]["comparison"]
+    ok = [e for e in cmp["entries"] if e["status"] == "ok"]
+    assert len(ok) >= 10 and cmp["winner"] == ok[0]["key"]
+    assert [e["score"] for e in ok] == sorted((e["score"] for e in ok), reverse=True)
+    assert exp["results"]["algorithm"]["compared"] and exp["algorithm"] == cmp["winner"]
+    assert "best of" in exp["algorithm_label"]
+    assert exp["results"]["metrics"]["accuracy"] > 0.85
+
+
+def test_compare_regression_with_pdf(client):
+    ds = use_sample(client, "housing_prices.csv")
+    exp = wait_for(client, run(client, ds, algorithm="auto_compare").json()["id"], timeout=150)
+    assert exp["status"] == "completed", exp.get("error")
+    assert exp["results"]["metrics"]["r2"] > 0.7
+    pdf = client.get(f"/api/experiments/{exp['id']}/download/experiment_report.pdf")
+    assert pdf.content.startswith(b"%PDF")
+
+
+def test_catalogue_is_consistent():
+    from app.algorithms import CATALOGUE, build_estimator, default_params, public_catalogue
+    for problem, algos in CATALOGUE.items():
+        assert len(algos) >= 13 - (problem == "regression") * 0
+        for key in algos:
+            build_estimator(problem, key, default_params(problem, key), 0)  # every default builds
+    assert all("build" not in a for algos in public_catalogue().values() for a in algos)

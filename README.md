@@ -25,7 +25,8 @@ The ML computation itself runs on a virtual machine that we control: the OS, the
 - Automatic profiling: rows, column types, missing values, duplicates, ID / constant / text column warnings
 - Target suggestion and classification / regression detection (overridable)
 - Preprocessing: imputation, one-hot / ordinal encoding, scaling, train/test split, random state
-- 5 classification and 4 regression algorithms, with parameter forms generated from `backend/app/algorithms.py`
+- 27 algorithms (13 classification, 14 regression) grouped by family: linear, probabilistic, neighbors, trees and ensembles (random forest, extra trees, gradient boosting, histogram gradient boosting, AdaBoost), margin (SVM) and neural network (MLP). The parameter forms are generated from one registry, `backend/app/algorithms.py`
+- **Compare all algorithms:** one click trains every algorithm with default settings, ranks them on a validation slice (so the test rows stay unseen), then retrains the winner on all the data and measures it on the test rows
 - Live processing screen showing the instance the work runs on
 - Results: accuracy / precision / recall / F1 or MAE / MSE / RMSE / R², confusion matrix, feature importance, class distribution, actual vs predicted, residuals
 - Downloads: `results.json`, `metrics.csv`, `predictions.csv`, `experiment_report.pdf`, `model.joblib`, `experiment_config.json` (or all as a zip)
@@ -33,7 +34,7 @@ The ML computation itself runs on a virtual machine that we control: the OS, the
 
 ## Limits (protect a t3.micro)
 
-50 MB file, 100,000 rows, 1 experiment at a time, 120 s per experiment. Only approved algorithms can run, and users submit configuration, never code.
+50 MB file, 100,000 rows, 1 experiment at a time, 120 s per experiment. Only approved algorithms can run, and users submit configuration, never code. Compare mode ranks on at most 5,000 training rows and skips slower algorithms if its time budget runs out; permutation importance is skipped on a slow run so it still finishes inside the limit.
 
 ## Run locally
 
@@ -87,12 +88,28 @@ sudo systemctl edit metricaml      # add:  [Service]  Environment=METRICA_COOKIE
 sudo systemctl restart metricaml
 ```
 
+## Use MetricaML from Claude (MCP)
+
+`mcp_server/server.py` is an MCP server that lets Claude Desktop, Claude Code or any MCP client drive a MetricaML deployment. It calls the normal HTTP API with your account, so the same limits and per-user privacy apply. It runs on **your computer**, not on the EC2 instance.
+
+Tools: `list_algorithms`, `list_sample_datasets`, `upload_dataset` (local file or sample), `run_experiment`, `compare_algorithms`, `get_experiment`, `list_experiments`, `download_artifact`.
+
+```bash
+pip install -r mcp_server/requirements.txt
+claude mcp add metricaml   -e METRICA_URL=http://<your-instance-ip> -e METRICA_EMAIL=you@example.com -e METRICA_PASSWORD=...   -- python /full/path/to/mcp_server/server.py
+```
+
+For Claude Desktop add the same command and `env` block to `claude_desktop_config.json`. Then ask, for example: *"Upload customer_churn.csv, compare all algorithms and tell me which is best."*
+
+The password is sent to MetricaML over HTTP unless you set up HTTPS (see above), so use HTTPS or an SSH tunnel for anything beyond a demo.
+
 ## Project layout
 
 ```
 backend/app/    main.py (API), profiler.py, pipeline.py (experiment engine), algorithms.py,
                 runner.py (worker process + time limit), report.py (PDF), security.py, db.py
-backend/tests/  API and end-to-end tests
+backend/tests/  API, algorithm and MCP tests
+mcp_server/     MCP server (runs on your computer)
 frontend/src/   React app (pages/, components/)
 deploy/         EC2 setup, systemd unit, Nginx config
 sample_data/    test datasets

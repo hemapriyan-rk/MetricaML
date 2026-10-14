@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { api } from '../api'
 import { useApp } from '../app-context'
 import { Alert, Icon, Spinner } from '../components/bits'
-import AlgorithmStep from './wizard/AlgorithmStep'
+import AlgorithmStep, { COMPARE_KEY } from './wizard/AlgorithmStep'
 import DatasetStep from './wizard/DatasetStep'
 import FeaturesStep from './wizard/FeaturesStep'
 import PreprocessStep from './wizard/PreprocessStep'
@@ -34,9 +34,9 @@ export default function NewExperiment() {
   const cols = useMemo(() => Object.fromEntries((profile?.columns ?? []).map((c) => [c.name, c])), [profile])
 
   function chooseAlgorithm(problemType, key) {
-    const spec = config.algorithms[problemType].find((a) => a.key === key)
     setAlgo(key)
-    setParams(defaultParams(spec))
+    if (key === COMPARE_KEY) return setParams({})
+    setParams(defaultParams(config.algorithms[problemType].find((a) => a.key === key)))
   }
 
   function onDataset(ds) {

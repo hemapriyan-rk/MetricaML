@@ -66,6 +66,21 @@ def build_report(path, results: dict, exp_row) -> None:
     story.append(_table(rows, [60 * mm, 100 * mm]))
     story.append(Paragraph(f"Measured on {ds['rows_test']:,} held-out rows the model never saw during training.", small))
 
+    comparison = results.get("comparison")
+    if comparison:
+        story.append(Paragraph("Algorithm comparison", h2))
+        label = "Accuracy" if comparison["metric"] == "accuracy" else "R²"
+        rows = [["Algorithm", f"Validation {label}", "Fit time"]]
+        for e in comparison["entries"]:
+            if e["status"] == "ok":
+                score = f"{e['score'] * 100:.1f}%" if comparison["metric"] == "accuracy" else f"{e['score']:.3f}"
+                rows.append([e["label"], score, f"{e['seconds']:.2f} s"])
+            else:
+                rows.append([e["label"], e["status"], ""])
+        story.append(_table(rows, [80 * mm, 45 * mm, 35 * mm], header=True))
+        story.append(Paragraph(f"Ranked on a validation slice of the training rows ({comparison['rows_used']:,} rows used). "
+                               "The held-out test rows were only used to measure the winner.", small))
+
     importance = results["charts"]["importance"][:10]
     if importance:
         story.append(Paragraph("Most influential features", h2))

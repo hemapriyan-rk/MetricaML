@@ -23,7 +23,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler, OneHotEncoder, OrdinalEncoder, StandardScaler
 
 from . import config, db, report
-from .algorithms import algorithm_label, build_estimator
+from .algorithms import CATALOGUE, COMPARE_KEY, algorithm_label, build_estimator, default_params
 from .profiler import DatasetError, load_dataframe
 from .system_info import get_host
 
@@ -129,6 +129,57 @@ def _build_preprocessor(numeric, categorical, prep_cfg):
     return ColumnTransformer(parts, remainder="drop", verbose_feature_names_out=False)
 
 
+COMPARE_SAMPLE_ROWS = 5000   # algorithms are ranked on at most this many training rows
+IMPORTANCE_BUDGET = 0.6       # skip permutation importance once this share of the time limit is used
+
+
+def _compare(problem, X_tr, y_tr, numeric, categorical, prep_cfg, seed, started):
+    """Rank every approved algorithm with default settings.
+
+    Candidates are fitted on a slice of the training rows and scored on a held-back validation
+    slice, so the real test rows stay untouched until the winner is evaluated. Quick models run
+    first, and the rest are skipped if the time budget runs out.
+    """
+    budget = config.MAX_TRAIN_SECONDS * 0.6
+    rng = np.random.default_rng(seed)
+    if len(X_tr) > COMPARE_SAMPLE_ROWS:
+        pick = rng.choice(len(X_tr), size=COMPARE_SAMPLE_ROWS, replace=False)
+        Xs, ys = X_tr.iloc[pick], y_tr.iloc[pick]
+    else:
+        Xs, ys = X_tr, y_tr
+    strat = ys if problem == "classification" and ys.value_counts().min() >= 2 else None
+    try:
+        Xf, Xv, yf, yv = train_test_split(Xs, ys, test_size=0.25, random_state=seed, stratify=strat)
+    except ValueError:
+        Xf, Xv, yf, yv = train_test_split(Xs, ys, test_size=0.25, random_state=seed)
+    score_fn = accuracy_score if problem == "classification" else r2_score
+
+    entries = []
+    ordered = sorted(CATALOGUE[problem].items(), key=lambda kv: kv[1]["cost"])
+    for key, spec in ordered:
+        entry = {"key": key, "label": spec["label"], "family": spec["family"]}
+        if time.time() - started > budget:
+            entries.append({**entry, "status": "skipped", "note": "Skipped to stay within the time limit"})
+            continue
+        try:
+            est = build_estimator(problem, key, default_params(problem, key), seed)
+            cand = Pipeline([("prep", _build_preprocessor(numeric, categorical, prep_cfg)), ("model", est)])
+            t0 = time.time()
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                cand.fit(Xf, yf)
+                score = float(score_fn(yv, cand.predict(Xv)))
+            entries.append({**entry, "status": "ok", "score": round(score, 6), "seconds": round(time.time() - t0, 3)})
+        except Exception as exc:  # noqa: BLE001 - one bad candidate must not sink the comparison
+            entries.append({**entry, "status": "failed", "note": str(exc)[:120]})
+    ok = sorted((e for e in entries if e["status"] == "ok"), key=lambda e: -e["score"])
+    if not ok:
+        raise DatasetError("None of the algorithms could be trained on this data.")
+    rest = [e for e in entries if e["status"] != "ok"]
+    return {"metric": "accuracy" if problem == "classification" else "r2", "rows_used": int(len(Xs)),
+            "winner": ok[0]["key"], "entries": ok + rest}
+
+
 def _round(x, digits=4):
     return None if x is None else round(float(x), digits)
 
@@ -152,10 +203,11 @@ def run_experiment(exp_id: int) -> None:
         tracker.finish()
         with db.db() as conn:
             conn.execute(
-                "UPDATE experiments SET status='completed', primary_metric=?, primary_value=?, host_json=?, "
-                "finished_at=?, duration_s=? WHERE id=?",
-                (results["primary"]["name"], results["primary"]["value"], json.dumps(host), db.now_iso(),
-                 round(time.time() - started, 2), exp_id))
+                "UPDATE experiments SET status='completed', algorithm=?, algorithm_label=?, primary_metric=?, "
+                "primary_value=?, host_json=?, finished_at=?, duration_s=? WHERE id=?",
+                (results["algorithm"]["key"], results["display_label"], results["primary"]["name"],
+                 results["primary"]["value"], json.dumps(host), db.now_iso(), round(time.time() - started, 2),
+                 exp_id))
     except Exception as exc:  # noqa: BLE001 - every failure must be reported to the user
         tracker.finish()
         message = str(exc) if isinstance(exc, (DatasetError, ValueError)) else f"{type(exc).__name__}: {exc}"
@@ -215,8 +267,9 @@ def _execute(row, cfg, tracker: StageTracker, out_dir: Path, host: dict, started
     # 3. Preprocessing ------------------------------------------------------
     tracker.begin(2)
     preprocessor = _build_preprocessor(numeric, categorical, prep_cfg)
-    estimator = build_estimator(problem, cfg["algorithm"], cfg["params"], seed)
-    pipe = Pipeline([("prep", preprocessor), ("model", estimator)])
+    compare = cfg["algorithm"] == COMPARE_KEY
+    if not compare:
+        build_estimator(problem, cfg["algorithm"], cfg["params"], seed)  # fail early on bad settings
 
     # 4. Splitting ----------------------------------------------------------
     tracker.begin(3)
@@ -231,6 +284,13 @@ def _execute(row, cfg, tracker: StageTracker, out_dir: Path, host: dict, started
 
     # 5. Training -----------------------------------------------------------
     tracker.begin(4)
+    comparison = None
+    algo_key, algo_params = cfg["algorithm"], cfg["params"]
+    if compare:
+        comparison = _compare(problem, X_tr, y_tr, numeric, categorical, prep_cfg, seed, started)
+        algo_key = comparison["winner"]
+        algo_params = default_params(problem, algo_key)
+    pipe = Pipeline([("prep", preprocessor), ("model", build_estimator(problem, algo_key, algo_params, seed))])
     t0 = time.time()
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
@@ -287,17 +347,21 @@ def _execute(row, cfg, tracker: StageTracker, out_dir: Path, host: dict, started
         scoring = "r2"
 
     # Feature importance by permutation on the original columns: works for every algorithm.
-    n_feat = X_te.shape[1]
-    repeats = 5 if n_feat <= 20 else 3 if n_feat <= 60 else 2
-    sub = min(len(X_te), 1500)
-    sub_idx = np.random.default_rng(seed).choice(len(X_te), size=sub, replace=False)
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
-        imp = permutation_importance(pipe, X_te.iloc[sub_idx], y_te.iloc[sub_idx], n_repeats=repeats,
-                                     random_state=seed, scoring=scoring, n_jobs=1)
-    order = np.argsort(-imp.importances_mean)[:15]
-    charts["importance"] = [{"feature": X_te.columns[i], "importance": _round(imp.importances_mean[i], 5),
-                             "std": _round(imp.importances_std[i], 5)} for i in order]
+    if time.time() - started > config.MAX_TRAIN_SECONDS * IMPORTANCE_BUDGET:
+        charts["importance"] = []  # skipped so slow models still finish inside the time limit
+        extra["importance_skipped"] = True
+    else:
+        n_feat = X_te.shape[1]
+        repeats = 5 if n_feat <= 20 else 3 if n_feat <= 60 else 2
+        sub = min(len(X_te), 1500)
+        sub_idx = np.random.default_rng(seed).choice(len(X_te), size=sub, replace=False)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            imp = permutation_importance(pipe, X_te.iloc[sub_idx], y_te.iloc[sub_idx], n_repeats=repeats,
+                                         random_state=seed, scoring=scoring, n_jobs=1)
+        order = np.argsort(-imp.importances_mean)[:15]
+        charts["importance"] = [{"feature": X_te.columns[i], "importance": _round(imp.importances_mean[i], 5),
+                                 "std": _round(imp.importances_std[i], 5)} for i in order]
 
     # 7. Generating ---------------------------------------------------------
     tracker.begin(6)
@@ -318,8 +382,12 @@ def _execute(row, cfg, tracker: StageTracker, out_dir: Path, host: dict, started
     results = {
         "experiment_id": row["id"],
         "problem_type": problem,
-        "algorithm": {"key": cfg["algorithm"], "label": algorithm_label(problem, cfg["algorithm"]),
-                      "params": cfg["params"]},
+        "algorithm": {"key": algo_key, "label": algorithm_label(problem, algo_key), "params": algo_params,
+                      "compared": compare},
+        "comparison": comparison,
+        "display_label": (f"{algorithm_label(problem, algo_key)} (best of "
+                          f"{sum(e['status'] == 'ok' for e in comparison['entries'])})") if compare
+                         else algorithm_label(problem, algo_key),
         "dataset": {"filename": row["dataset_filename"] or row["dataset_name"], "sha256": sha,
                     "rows_total": n_before, "rows_used": int(len(data)), "rows_missing_target": dropped_target,
                     "rows_train": int(len(X_tr)), "rows_test": int(len(X_te))},
@@ -354,7 +422,7 @@ def _execute(row, cfg, tracker: StageTracker, out_dir: Path, host: dict, started
         "problem_type": problem,
         "features": cfg["features"],
         "preprocessing": prep_cfg,
-        "algorithm": {"key": cfg["algorithm"], "params": cfg["params"]},
+        "algorithm": {"key": algo_key, "params": algo_params, "chosen_by_comparison": compare},
         "environment": {k: host[k] for k in ("provider", "instance_type", "os", "python", "scikit_learn", "pandas", "numpy")},
         "how_to_reproduce": "Upload the same dataset, choose the same target, features, preprocessing and algorithm "
                             "settings, and use the same random state. Results will match when library versions match.",
